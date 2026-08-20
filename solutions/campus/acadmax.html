@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acadmax</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+   <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#DC2626',
+                        'brand-dark': '#111827',
+                        'brand-gray': {
+                            '100': '#F3F4F6',
+                            '200': '#E5E7EB',
+                            '500': '#6B7280',
+                            '700': '#374151'
+                        },
+                        primary: '#DC2626',
+                        secondary: '#991B1B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB',
+                        softgray: '#E5E7EB',
+                        teal: '#0D9488',
+                        accent: '#64748B'
+                    },
+                    fontFamily: {
+                        'sans': ['Comfortaa', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900">
+
+    <header id="header" class="fixed top-0 left-0 right-0 bg-white border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+    <a href="../../index.html" class="flex items-center space-x-1">
+        <div class="w-14 h-14 flex items-center justify-center">
+            <img src="../../assets/img/max-logo.png"
+                 alt="Max Intelligence Logo">
+        </div>
+        <span class="text-2xl font-semibold text-dark">Max <span
+                class="text-primary">Intelligence</span></span>
+    </a>
+</div>
+
+                 <nav class="hidden lg:flex items-center space-x-1">
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Solutions</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-4xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Solutions</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="../../solutions/ai_ma.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                                    Learning</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/healthcare_technology.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fas fa-stethoscope text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                                    Technology Solutions</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/campus_suite.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-folder-closed text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                                    Education Management System</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/construction_manageme.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                                    Construction Management Systems</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/hos.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-address-book text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                                    System</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/e_s_p.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                                    Platforms</span>
+                                            </a></li>
+                                        <li><a href="../../solutions/c_b_s.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                                    Solutions</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Campus &amp; Education
+                                        Management System</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Solution</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#solutions-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Solutions
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div
+                            class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-3xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="../../services/ux_design_product_strateg.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-group text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                                    Product Development</span>
+                                            </a></li>
+                                        <li><a href="../../services/mobile_app_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-mobile text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="../../services/web_saas_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="../../services/cloud_engineering_devops.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-server text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                                    and DevOps</span>
+                                            </a></li>
+                                        <li><a href="../../services/system_integration_migration.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-laptop-code text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">System Integration
+                                                    and Migration</span>
+                                            </a></li>
+                                        <li><a href="../../services/support_managed_services.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                                    Services</span>
+                                            </a></li>
+                                        <li><a href="../../services/ai_intelligence.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-microchip text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI &
+                                                    Intelligence</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Services</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#services-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Services
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../../about.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a>
+                    <a href="../../contact-max.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <button id="talk-to-expert-btn" type="button"
+                        class="hidden lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                        Talk to Expert
+                    </button>
+                    <a href="../../contact-max.html"
+                        class="hidden sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a>
+                   <button id="mobile-menu-btn"
+                        class="lg:hidden w-10 h-10 flex items-center justify-center text-white bg-gray-800 border border-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition"
+                        aria-label="Toggle mobile menu">
+                        <span id="mobile-menu-icon" class="text-2xl leading-none font-light" aria-hidden="true">☰</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-2xl">
+            <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+
+                <button id="mobile-solutions-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Solutions</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-solutions-icon"></i>
+                </button>
+                <div id="mobile-solutions-menu" class="hidden pl-4 space-y-1">
+
+                    <div>
+                       
+                        <ul class="space-y-2">
+                            <li><a href="../ai_ma.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-lightbulb text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                        Learning</span>
+                                </a></li>
+                            <li><a href="../healthcare_technology.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fas fa-stethoscope text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                        Technology Solutions</span>
+                                </a></li>
+                            <li><a href="../campus_suite.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-folder-closed text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                        Education Management System</span>
+                                </a>
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+
+                                    <ul class="space-y-2">
+                                        <li><a href="acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive
+                                                    Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="../construction_manageme.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-building text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                        Construction Management Systems</span>
+                                </a></li>
+                            <li><a href="../hos.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-address-book text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                        System</span>
+                                </a></li>
+                            <li><a href="../e_s_p.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-gem text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                        Platforms</span>
+                                </a></li>
+                            <li><a href="../c_b_s.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                        Solutions</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="mobile-services-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Services</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-services-icon"></i>
+                </button>
+                <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
+                    <div>
+                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                            Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="../../services/ux_design_product_strateg.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-group text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                        Product Development</span>
+                                </a></li>
+                            <li><a href="../../services/mobile_app_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-mobile text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../../services/web_saas_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../../services/cloud_engineering_devops.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-server text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                        and DevOps</span>
+                                </a></li>
+                            <li><a href="../../services/system_integration_migration.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-laptop-code text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">System Integration
+                                        and Migration</span>
+                                </a></li>
+                            <li><a href="../../services/support_managed_services.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                        Services</span>
+                                </a></li>
+                            <li><a href="../../services/ai_intelligence.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-microchip text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI &
+                                        Intelligence</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../../about.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../../contact-max.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><button
+                    class=" lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                    Talk to Expert
+                </button></div> 
+               <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../../contact-max.html"
+                    class=" sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a></div> 
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Configuration for submenus
+            const submenus = [
+                { btn: 'mobile-solutions-btn', menu: 'mobile-solutions-menu', icon: 'mobile-solutions-icon' },
+                { btn: 'mobile-services-btn', menu: 'mobile-services-menu', icon: 'mobile-services-icon' }
+            ];
+
+            // 1. Toggle Main Mobile Menu
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+
+                // Swap Icon (Bars to X)
+                const svgPath = mobileBtn.querySelector('path');
+                if (isOpen) {
+                    // Bars Icon
+                    svgPath.setAttribute('d', 'M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z');
+                } else {
+                    // X Icon
+                    svgPath.setAttribute('d', 'M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z');
+                }
+            });
+
+            // 2. Handle Submenus Logic
+            submenus.forEach(item => {
+                const btn = document.getElementById(item.btn);
+                const menu = document.getElementById(item.menu);
+                const icon = document.getElementById(item.icon);
+
+                if (btn && menu) {
+                    btn.addEventListener('click', (event) => {
+                        event.stopPropagation();
+
+                        const shouldOpen = menu.classList.contains('hidden');
+
+                        submenus.forEach(other => {
+                            const otherMenu = document.getElementById(other.menu);
+                            const otherIcon = document.getElementById(other.icon);
+                            if (otherMenu) otherMenu.classList.add('hidden');
+                            if (otherIcon) otherIcon.classList.remove('rotate-180');
+                        });
+
+                        if (shouldOpen) {
+                            menu.classList.remove('hidden');
+                            if (icon) icon.classList.add('rotate-180');
+                        } else {
+                            menu.classList.add('hidden');
+                            if (icon) icon.classList.remove('rotate-180');
+                        }
+                    });
+                }
+            });
+
+            const megaItems = Array.from(document.querySelectorAll('nav .nav-item'));
+
+            const closeMegaMenus = () => {
+                megaItems.forEach(item => {
+                    const button = item.querySelector('button');
+                    const menu = item.querySelector('.mega-menu');
+                    if (menu) menu.classList.add('hidden');
+                    if (button) button.setAttribute('aria-expanded', 'false');
+                });
+            };
+
+            megaItems.forEach(item => {
+                const button = item.querySelector('button');
+                const menu = item.querySelector('.mega-menu');
+
+                if (!button || !menu) return;
+
+                button.setAttribute('aria-expanded', 'false');
+
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const shouldOpen = menu.classList.contains('hidden');
+                    closeMegaMenus();
+
+                    if (shouldOpen) {
+                        menu.classList.remove('hidden');
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                menu.addEventListener('click', (event) => event.stopPropagation());
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('nav .nav-item')) {
+                    closeMegaMenus();
+                }
+            });
+
+        });
+    </script>
+
+<main id="main-content" class="py-20 lg:py-24">
+    <section id="hero-section" class="pt-32 pb-20 px-8 h-[720px] flex items-center bg-gradient-to-br from-gray-50 to-white fade-section lg:h-[90vh] items-center justify-center">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid grid-cols-2 gap-20 items-center">
+                <div class="space-y-7">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm">
+                        <i class="fa-solid fa-building-columns text-primary text-xs"></i>
+                        <span class="text-sm font-medium text-primary">Campus Management System</span>
+                    </div>
+                    
+                    <h1 class="text-6xl font-bold text-secondary leading-tight">
+                        Academic Operations Simplified. Performance Optimized.
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Manage the entire student, teacher, and employee lifecycle from one secure platform. Streamline administration, enhance learning outcomes.
+                    </p>
+                    
+                    <div class="flex items-center space-x-4 pt-4">
+                        <button class="px-8 py-4 bg-primary text-white font-medium rounded-lg hover:bg-red-700 transition-all shadow-lg shadow-red-100">
+                            Request Acadmax Demo
+                        </button>
+                        <button class="px-8 py-4 border border-gray-200 text-secondary font-medium rounded-lg hover:border-gray-300 transition-all">
+                            Talk to an Education Expert
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center space-x-8 pt-6">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-shield-halved text-primary"></i>
+                            <span class="text-sm text-gray-600">FERPA Compliant</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-clock text-primary"></i>
+                            <span class="text-sm text-gray-600">24/7 Support Available</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-6 shadow-2xl border border-gray-100">
+                        <div class="space-y-5">
+                            <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+                                <h3 class="font-semibold text-secondary text-lg">Academic Dashboard</h3>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span class="text-xs text-gray-600">Live Data</span>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-xl border border-blue-100">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-11 h-11 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <i class="fa-solid fa-user-graduate text-blue-600 text-lg"></i>
+                                        </div>
+                                        <span class="text-xs font-medium text-green-600">+8.2%</span>
+                                    </div>
+                                    <div class="text-2xl font-bold text-secondary mb-1">3,847</div>
+                                    <div class="text-xs text-gray-600">Active Students</div>
+                                </div>
+                                
+                                <div class="bg-gradient-to-br from-purple-50 to-white p-5 rounded-xl border border-purple-100">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-11 h-11 bg-purple-100 rounded-lg flex items-center justify-center">
+                                            <i class="fa-solid fa-chalkboard-user text-purple-600 text-lg"></i>
+                                        </div>
+                                        <span class="text-xs font-medium text-green-600">+3.1%</span>
+                                    </div>
+                                    <div class="text-2xl font-bold text-secondary mb-1">284</div>
+                                    <div class="text-xs text-gray-600">Faculty Members</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-xl border border-red-100">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-sm font-medium text-gray-700">Attendance Rate</span>
+                                    <span class="text-2xl font-bold text-secondary">94.7%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-primary rounded-full h-2" style="width: 94.7%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-green-50 to-white p-5 rounded-xl border border-green-100">
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-sm font-medium text-gray-700">Performance KPIs</span>
+                                    <i class="fa-solid fa-chart-line text-green-600"></i>
+                                </div>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div>
+                                        <div class="text-lg font-bold text-secondary">87%</div>
+                                        <div class="text-xs text-gray-600">Pass Rate</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-secondary">4.2</div>
+                                        <div class="text-xs text-gray-600">Avg GPA</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-lg font-bold text-secondary">92%</div>
+                                        <div class="text-xs text-gray-600">Satisfaction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Hero Section -->
+        <section class="bg-slate-900 text-white py-24 relative overflow-hidden fade-section">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-block px-4 py-1.5 bg-red-600/20 text-red-400 border border-red-500/30 rounded-full text-xs font-bold tracking-widest uppercase">
+                        Flagship Enterprise Solution
+                    </span>
+                    <h1 class="text-4xl sm:text-6xl font-black leading-tight tracking-tight">
+                        ACADMAX <span class="text-red-500">Digital Campus Ecosystem</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg sm:text-xl leading-relaxed">
+                        One Platform. Every Process. The Entire Student Lifecycle. An enterprise-grade, browser-based campus management solution purpose-built for the future-ready university.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="../../contact-max.html" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-red-600/30 text-base">
+                            Request Executive Proposal
+                        </a>
+                        <a href="#architecture" class="border border-slate-700 hover:bg-slate-800 text-slate-200 px-8 py-4 rounded-xl font-semibold transition text-base">
+                            Explore Architecture
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Hub Graphic / Wheel Highlight -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-md bg-slate-800/90 border border-slate-700 rounded-3xl p-8 shadow-2xl backdrop-blur relative">
+                        <div class="text-center mb-6">
+                            <span class="w-16 h-16 bg-red-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-3 shadow-lg shadow-red-600/40">
+                                ∞
+                            </span>
+                            <h3 class="text-2xl font-black text-white">20+ Integrated Modules</h3>
+                            <p class="text-slate-400 text-xs mt-1">Connecting Students, Faculty, Research & Administration</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-300">
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>Admissions & SIS</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>Exam & Result Branch</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>LMS & PLO/CLO</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>Finance & Ledger</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>Research & Thesis</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/60 rounded-lg border border-slate-700/50 flex items-center space-x-2">
+                                <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                                <span>QEC & Accreditation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Partner Universities Logos -->
+        <section class="py-10 bg-white border-b border-slate-200 fade-section">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <p class="text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-6">Deployed & Proven Across Leading Higher Education Institutions</p>
+                <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 font-black text-slate-700 text-sm sm:text-base">
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">National Defence University (NDU)</span>
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">NUML</span>
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">HITEC University</span>
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">Quaid-i-Azam University</span>
+                    <span class="inline-flex items-center gap-2 px-6 py-3 bg-slate-50 rounded-xl border border-slate-200 shadow-sm">WEC</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Summary & Core Pillars -->
+        <section class="py-20 bg-slate-50 fade-section">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-3xl font-bold text-slate-900">The Digital Campus Vision</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        ACADMAX is not a generic enterprise resource planning suite adapted for education; it is a purpose-built higher-education platform preconfigured for credit hours, prerequisites, examination boards, quality-enhancement cells, and thesis evaluations out of the box.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl">01</div>
+                        <h3 class="text-xl font-bold text-slate-900">Connected Campus</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Links users, data, and multi-campus departments on a single source of truth without duplicated effort.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl">02</div>
+                        <h3 class="text-xl font-bold text-slate-900">Paperless University</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Replaces manual routing with event-driven automated workflows, digital forms, and immutable audit logs.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl">03</div>
+                        <h3 class="text-xl font-bold text-slate-900">Data-Driven Leadership</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Provides executive dashboards, 200+ standard reports, and Power BI integrations for real-time decision making.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center font-bold text-xl">04</div>
+                        <h3 class="text-xl font-bold text-slate-900">AI-Capable Foundation</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Engineered to integrate intelligent chatbots, predictive student-success analytics, and smart scheduling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete Student Lifecycle Process -->
+        <section class="py-20 bg-white border-y border-slate-200 fade-section">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Lifecycle Governance</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900">End-to-End Application & Student Journey</h2>
+                    <p class="text-slate-600">Every stage of the student journey is managed on a single record—from prospect contact to lifelong alumni engagement.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">01</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Recruitment & Admission</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Prospect portals, online application forms, document uploads, interview scheduling, and merit list processing.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">02</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Registration & Academics</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Automatic prerequisite enforcement, course section assignment, degree audit, and timetable generation.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">03</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Learning Management (LMS)</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Embedded PLO/CLO mapping, lesson plans, searchable learning repositories, coursework, and attendance.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">04</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Examination & Scrutiny</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Admit card generation, mark distribution, rechecking workflows, transcript printing, and degree audit.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">05</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Research & Thesis (MS/PhD)</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Synopsis submission, UERC milestone tracking, foreign/local evaluation routing, and public defence logs.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">06</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Financial Clearance</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Automated fee voucher generation, installment tracking, defaulter rules, and scholarship committee approvals.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">07</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Graduation & Convocation</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">Multi-department clearance verification, degree conferment, transcript sealing, and convocation lists.</p>
+                    </div>
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 relative">
+                        <span class="text-3xl font-black text-slate-300 mb-2 block">08</span>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Alumni Network</h4>
+                        <p class="text-slate-600 text-xs leading-relaxed">One-click registration, career postings, resume builders, department newsletters, and QEC feedback surveys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Reference Architecture Section -->
+        <section id="architecture" class="py-20 bg-slate-900 text-white fade-section">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-red-500 font-bold uppercase tracking-wider text-xs">Enterprise Technology Stack</span>
+                    <h2 class="text-3xl font-extrabold">ACADMAX Reference Architecture</h2>
+                    <p class="text-slate-400">A high-performance, layered reference architecture built on Microsoft enterprise technologies.</p>
+                </div>
+
+                <div class="space-y-4 max-w-5xl mx-auto">
+                    <!-- Presentation Layer -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="md:w-1/3">
+                            <span class="text-xs uppercase text-red-400 font-bold tracking-wider">Layer 1</span>
+                            <h3 class="text-xl font-bold">Presentation Layer</h3>
+                        </div>
+                        <div class="md:w-2/3 flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Responsive Web Portal</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Mobile UI</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">SelfServ Portals</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Role-Based Dashboards</span>
+                        </div>
+                    </div>
+
+                    <!-- Application Layer -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="md:w-1/3">
+                            <span class="text-xs uppercase text-red-400 font-bold tracking-wider">Layer 2</span>
+                            <h3 class="text-xl font-bold">Application Layer</h3>
+                        </div>
+                        <div class="md:w-2/3 flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Business Services</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">WF Workflow Engine</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Dynamic Forms Builder</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Notifications Engine</span>
+                        </div>
+                    </div>
+
+                    <!-- Integration Layer -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="md:w-1/3">
+                            <span class="text-xs uppercase text-red-400 font-bold tracking-wider">Layer 3</span>
+                            <h3 class="text-xl font-bold">Integration Layer</h3>
+                        </div>
+                        <div class="md:w-2/3 flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">REST APIs</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">SOAP Web Services</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">OData Services</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Enterprise Service Bus</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Layer -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="md:w-1/3">
+                            <span class="text-xs uppercase text-red-400 font-bold tracking-wider">Layer 4</span>
+                            <h3 class="text-xl font-bold">Data & Analytics Layer</h3>
+                        </div>
+                        <div class="md:w-2/3 flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Microsoft SQL Server</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Data Warehouse</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Power BI Dashboards</span>
+                            <span class="px-3 py-1.5 bg-slate-900 rounded-lg text-xs font-semibold text-slate-300 border border-slate-700">Reporting Services</span>
+                        </div>
+                    </div>
+
+                    <!-- Security Spine -->
+                    <div class="p-4 bg-red-600/20 border border-red-500/30 rounded-xl text-center text-xs font-bold text-red-300 tracking-wider uppercase">
+                        Cross-Cutting Security Spine: Role-Based Access Control (RBAC) • Authentication • Authorization • Immutable Audit Logs • AES Data Encryption
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Structured Migration Framework & Implementation -->
+        <section class="py-20 bg-slate-50 fade-section">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <span class="text-red-600 font-bold uppercase tracking-wider text-xs">Implementation & Migration</span>
+                    <h2 class="text-3xl font-bold text-slate-900">Structured Migration Framework</h2>
+                    <p class="text-slate-600">De-risking system deployment and preserving years of legacy institutional records.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 text-center">
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 01</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Assessment</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 02</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Data Mapping</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 03</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Cleansing</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 04</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Transform</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 05</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Migration</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 06</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Validation</h5>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200">
+                        <span class="text-xs font-black text-red-600 block">STEP 07</span>
+                        <h5 class="font-bold text-slate-900 text-sm mt-1">Go-Live</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-slate-900 text-white text-center fade-section">
+            <div class="max-w-4xl mx-auto px-6 space-y-6">
+                <h2 class="text-3xl sm:text-5xl font-black">Ready to Transform Your Campus Operating Model?</h2>
+                <p class="text-slate-300 text-lg">Schedule a comprehensive demonstration or request an architectural consultation with our higher education solutions team.</p>
+                <div class="pt-4">
+                    <a href="../../contact-max.html" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold px-10 py-4 rounded-xl text-lg transition shadow-xl shadow-red-600/30">
+                        Talk to an Education Expert
+                    </a>
+                </div>
+            </div>
+        </section>
+    <section id="what-acadmax-does-section" class="py-24 px-8 fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 rounded-full mb-4">
+                    <i class="fa-solid fa-grid-2 text-primary text-xs"></i>
+                    <span class="text-sm font-medium text-primary">Comprehensive Solutions</span>
+                </div>
+                <h2 class="text-5xl font-bold text-secondary mb-6">What Acadmax Does</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Complete campus management covering every aspect of academic and administrative operations</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-6">
+                <div id="module-card-1" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-building text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Campus Administration</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Centralized control over all campus facilities and resources</p>
+                </div>
+                
+                <div id="module-card-2" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-id-card text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Student Records & Profiles</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Complete digital records from admission to graduation</p>
+                </div>
+                
+                <div id="module-card-3" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-calendar text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Academic Scheduling</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Smart timetabling and class scheduling automation</p>
+                </div>
+                
+                <div id="module-card-4" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-file-lines text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Exams & Evaluations</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">End-to-end exam management and assessment tools</p>
+                </div>
+                
+                <div id="module-card-5" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-clipboard text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Attendance & Grades</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Real-time tracking and automated grade calculations</p>
+                </div>
+                
+                <div id="module-card-6" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-credit-card text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Fee Management</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Automated billing, payments, and financial tracking</p>
+                </div>
+                
+                <div id="module-card-7" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-hospital text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">Hostel & Mess Management</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Complete residential facility and dining operations</p>
+                </div>
+                
+                <div id="module-card-8" class="bg-white/60 backdrop-blur-sm p-7 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-primary/30 transition-all group">
+                    <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mb-5 border border-gray-200 group-hover:border-primary group-hover:bg-red-50 transition-all">
+                        <i class="fa-solid fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-secondary mb-2">HR & Staff Modules</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Faculty and staff management with payroll integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-capabilities-section" class="py-24 px-8 bg-gradient-to-br from-gray-50 to-white fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm mb-4">
+                    <i class="fa-solid fa-brain text-primary text-xs"></i>
+                    <span class="text-sm font-medium text-primary">Powered by Max Intelligence</span>
+                </div>
+                <h2 class="text-5xl font-bold text-secondary mb-6">AI-Driven Capabilities</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Predictive analytics and intelligent automation for smarter decision-making</p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-8">
+                <div id="ai-card-1" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-chart-line text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary mb-2">Student Outcome Predictions</h3>
+                            <p class="text-gray-600 mb-4">AI models predict academic performance and identify at-risk students early</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm text-gray-700">Early Warning System</span>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-xs font-medium text-green-600">Active</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm text-gray-700">Performance Forecasting</span>
+                            <span class="text-xs font-semibold text-secondary">92% Accuracy</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm text-gray-700">Intervention Recommendations</span>
+                            <i class="fa-solid fa-check text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="ai-card-2" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-user-check text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary mb-2">Smart Attendance Analytics</h3>
+                            <p class="text-gray-600 mb-4">Pattern recognition and anomaly detection for attendance management</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-white p-5 rounded-xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-sm font-medium text-gray-700">Weekly Trends</span>
+                            <span class="text-xs text-gray-500">Last 30 days</span>
+                        </div>
+                        <div class="flex items-end justify-between h-32 space-x-2">
+                            <div class="flex-1 bg-gradient-to-t from-purple-200 to-purple-100 rounded-t" style="height: 65%"></div>
+                            <div class="flex-1 bg-gradient-to-t from-purple-200 to-purple-100 rounded-t" style="height: 72%"></div>
+                            <div class="flex-1 bg-gradient-to-t from-purple-200 to-purple-100 rounded-t" style="height: 68%"></div>
+                            <div class="flex-1 bg-gradient-to-t from-purple-400 to-purple-300 rounded-t" style="height: 88%"></div>
+                            <div class="flex-1 bg-gradient-to-t from-purple-200 to-purple-100 rounded-t" style="height: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="ai-card-3" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-50 to-green-100 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-chart-line text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary mb-2">Automated Reporting</h3>
+                            <p class="text-gray-600 mb-4">Generate comprehensive reports instantly with natural language queries</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-file-pdf text-red-500 text-lg"></i>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-700">Monthly Performance Report</div>
+                                <div class="text-xs text-gray-500">Generated 2 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-file-excel text-green-600 text-lg"></i>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-700">Attendance Summary</div>
+                                <div class="text-xs text-gray-500">Auto-scheduled daily</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-chart-bar text-blue-600 text-lg"></i>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-700">Department Analytics</div>
+                                <div class="text-xs text-gray-500">Weekly digest</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="ai-card-4" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-sitemap text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-secondary mb-2">Dynamic Resource Planning</h3>
+                            <p class="text-gray-600 mb-4">Optimize classroom allocation, faculty scheduling, and resource distribution</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gradient-to-br from-orange-50 to-white p-4 rounded-xl border border-orange-100">
+                            <div class="text-2xl font-bold text-secondary mb-1">98%</div>
+                            <div class="text-xs text-gray-600">Space Utilization</div>
+                        </div>
+                        <div class="bg-gradient-to-br from-orange-50 to-white p-4 rounded-xl border border-orange-100">
+                            <div class="text-2xl font-bold text-secondary mb-1">247</div>
+                            <div class="text-xs text-gray-600">Optimized Schedules</div>
+                        </div>
+                        <div class="col-span-2 bg-gradient-to-br from-orange-50 to-white p-4 rounded-xl border border-orange-100">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-gray-700">Conflict Resolution</span>
+                                <span class="text-lg font-bold text-green-600">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits-section" class="py-24 px-8 fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 rounded-full mb-4">
+                    <i class="fa-solid fa-trophy text-primary text-xs"></i>
+                    <span class="text-sm font-medium text-primary">Key Benefits</span>
+                </div>
+                <h2 class="text-5xl font-bold text-secondary mb-6">Benefits at a Glance</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Transform your institution with measurable improvements across all operations</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-6">
+                <div id="benefit-card-1" class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-sm border border-blue-200">
+                        <i class="fa-solid fa-gauge-high text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-secondary mb-2">65%</div>
+                    <div class="text-sm font-medium text-gray-700 mb-2">Reduced Admin Workload</div>
+                    <p class="text-xs text-gray-600">Automation eliminates repetitive tasks</p>
+                </div>
+                
+                <div id="benefit-card-2" class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-sm border border-purple-200">
+                        <i class="fa-solid fa-eye text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-secondary mb-2">100%</div>
+                    <div class="text-sm font-medium text-gray-700 mb-2">Department-wide Visibility</div>
+                    <p class="text-xs text-gray-600">Complete transparency across operations</p>
+                </div>
+                
+                <div id="benefit-card-3" class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-green-100 hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-sm border border-green-200">
+                        <i class="fa-solid fa-bolt text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-secondary mb-2">Real-time</div>
+                    <div class="text-sm font-medium text-gray-700 mb-2">Instant Insights</div>
+                    <p class="text-xs text-gray-600">Live data for immediate action</p>
+                </div>
+                
+                <div id="benefit-card-4" class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-orange-100 hover:shadow-xl transition-all text-center">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-sm border border-orange-200">
+                        <i class="fa-solid fa-chart-pie text-orange-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-secondary mb-2">3x</div>
+                    <div class="text-sm font-medium text-gray-700 mb-2">Data-driven Decisions</div>
+                    <p class="text-xs text-gray-600">Enhanced strategic planning capability</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-clock text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-secondary">40+ hrs</div>
+                        <div class="text-sm text-gray-600">Saved per week</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-200 flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-coins text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-secondary">35%</div>
+                        <div class="text-sm text-gray-600">Cost reduction</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-200 flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-users text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-secondary">95%</div>
+                        <div class="text-sm text-gray-600">User satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works-section" class="py-24 px-8 bg-gradient-to-br from-gray-50 to-white fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm mb-4">
+                    <i class="fa-solid fa-gears text-primary text-xs"></i>
+                    <span class="text-sm font-medium text-primary">Implementation Process</span>
+                </div>
+                <h2 class="text-5xl font-bold text-secondary mb-6">How It Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Four simple steps to transform your academic operations</p>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary/20 via-primary to-primary/20 transform -translate-y-1/2 hidden lg:block"></div>
+                
+                <div class="grid grid-cols-4 gap-8 relative">
+                    <div id="step-card-1" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all text-center relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fa-solid fa-database text-white text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-4 right-8 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                            1
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-3">Centralized Data</h3>
+                        <p class="text-gray-600 leading-relaxed">Consolidate all student, faculty, and operational data into a unified secure platform</p>
+                    </div>
+                    
+                    <div id="step-card-2" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all text-center relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fa-solid fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-4 right-8 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                            2
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-3">Intelligent Dashboards</h3>
+                        <p class="text-gray-600 leading-relaxed">Access real-time insights through intuitive dashboards tailored to each role</p>
+                    </div>
+                    
+                    <div id="step-card-3" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all text-center relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fa-solid fa-bell text-white text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-4 right-8 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                            3
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-3">Predictive Alerts</h3>
+                        <p class="text-gray-600 leading-relaxed">Receive AI-powered notifications for critical issues before they escalate</p>
+                    </div>
+                    
+                    <div id="step-card-4" class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all text-center relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                            <i class="fa-solid fa-arrows-rotate text-white text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-4 right-8 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
+                            4
+                        </div>
+                        <h3 class="text-xl font-semibold text-secondary mb-3">Automated Workflows</h3>
+                        <p class="text-gray-600 leading-relaxed">Streamline operations with intelligent automation across all departments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="institutions-section" class="py-20 px-8 bg-white border-y border-gray-100 fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Trusted by leading educational institutions</p>
+            </div>
+            <div class="grid grid-cols-6 gap-12 items-center opacity-40">
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-graduation-cap text-5xl text-gray-400"></i>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-school text-5xl text-gray-400"></i>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-book-open text-5xl text-gray-400"></i>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-building-columns text-5xl text-gray-400"></i>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-landmark text-5xl text-gray-400"></i>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fa-solid fa-university text-5xl text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-section" class="py-24 px-8 bg-gray-50 fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full border border-gray-200 mb-4">
+                    <i class="fa-solid fa-quote-left text-primary text-xs"></i>
+                    <span class="text-sm font-medium text-secondary">Success Stories</span>
+                </div>
+                <h2 class="text-5xl font-bold text-secondary mb-6">What Educators Say</h2>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8">
+                <div id="testimonial-card-1" class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="flex items-center space-x-1 mb-5">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">Acadmax transformed our administrative processes completely. We reduced paperwork by 80% and improved student satisfaction significantly.</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Administrator" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-secondary">Dr. James Anderson</div>
+                            <div class="text-sm text-gray-500">Dean, Springfield University</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="testimonial-card-2" class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="flex items-center space-x-1 mb-5">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">The predictive analytics helped us identify at-risk students early. Our retention rate improved by 23% in just one semester.</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Administrator" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-secondary">Dr. Maria Rodriguez</div>
+                            <div class="text-sm text-gray-500">Registrar, Tech Institute</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="testimonial-card-3" class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="flex items-center space-x-1 mb-5">
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                        <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">Outstanding platform with exceptional support. The automated scheduling alone saved our team countless hours every week.</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg" alt="Administrator" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-secondary">Prof. Michael Chen</div>
+                            <div class="text-sm text-gray-500">VP Academic Affairs, Metro College</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security-section" class="py-24 px-8 fade-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 gap-20 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 rounded-full">
+                        <i class="fa-solid fa-shield-halved text-primary text-xs"></i>
+                        <span class="text-sm font-medium text-primary">Enterprise Security</span>
+                    </div>
+                    
+                    <h2 class="text-5xl font-bold text-secondary leading-tight">
+                        Your data is protected at every level
+                    </h2>
+                    
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Acadmax meets the highest standards for educational data security and compliance, ensuring student information remains private and protected.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary mb-1">FERPA Compliant</h4>
+                                <p class="text-gray-600 text-sm">Full compliance with Family Educational Rights and Privacy Act</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary mb-1">256-bit Encryption</h4>
+                                <p class="text-gray-600 text-sm">Military-grade encryption for all data at rest and in transit</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary mb-1">Role-based Access</h4>
+                                <p class="text-gray-600 text-sm">Granular permissions ensure users only see relevant information</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-secondary mb-1">Regular Audits</h4>
+                                <p class="text-gray-600 text-sm">Continuous security monitoring and third-party penetration testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-gray-50 to-red-50 rounded-2xl p-12">
+                        <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fa-solid fa-file-shield text-green-600 text-3xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-secondary mb-2">Security Status</h3>
+                                <p class="text-sm text-gray-600">All systems operational</p>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-solid fa-lock text-green-600"></i>
+                                        <span class="text-sm font-medium text-gray-700">Data Encryption</span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-green-600">Active</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-solid fa-user-shield text-green-600"></i>
+                                        <span class="text-sm font-medium text-gray-700">Access Control</span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-green-600">Active</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-solid fa-cloud-arrow-up text-green-600"></i>
+                                        <span class="text-sm font-medium text-gray-700">Backup Systems</span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-green-600">Active</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fa-solid fa-satellite-dish text-green-600"></i>
+                                        <span class="text-sm font-medium text-gray-700">Threat Detection</span>
+                                    </div>
+                                    <span class="text-xs font-semibold text-green-600">Active</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 p-4 bg-green-50 rounded-xl border border-green-100">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-sm font-medium text-gray-700">Last Security Audit</span>
+                                    <span class="text-sm font-semibold text-green-600">Passed</span>
+                                </div>
+                                <div class="text-xs text-gray-500 mt-1">Conducted 15 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-section" class="py-24 px-8 bg-gradient-to-br from-gray-50 to-white fade-section">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-primary to-red-700 rounded-3xl p-16 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/3 translate-y-1/3"></div>
+                </div>
+                
+                <div class="relative z-10">
+                    <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-graduation-cap text-white text-3xl"></i>
+                    </div>
+                    <h2 class="text-5xl font-bold text-white mb-6">Ready to transform your institution?</h2>
+                    <p class="text-xl text-red-100 mb-10 max-w-2xl mx-auto">Join hundreds of educational institutions already using Acadmax to enhance academic excellence</p>
+                    
+                    <div class="flex items-center justify-center space-x-4">
+                        <button class="px-8 py-4 bg-white text-primary font-medium rounded-lg hover:bg-gray-50 transition-all shadow-xl">
+                            Request Acadmax Demo
+                        </button>
+                        <button class="px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-all">
+                            Talk to an Education Expert
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center justify-center space-x-8 mt-10">
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Free personalized demo</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Custom implementation plan</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Dedicated support team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+ <footer id="footer" class="bg-gray-50 border-t border-gray-200 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-1 mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="../../assets/img/max-logo.png"
+                                alt="max-intell">
+                        </div>
+                        <span class="text-l font-semibold text-dark">Max <span
+                                class="text-primary">Intelligence</span></span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        AI-powered SaaS platforms for intelligent digital transformation
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/max-intelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../ai_ma.html" class="text-sm text-gray-600 hover:text-primary transition">AI &amp; Machine
+                                Learning</a></li>
+                        <li><a href="../healthcare_technology.html" class="text-sm text-gray-600 hover:text-primary transition">Healthcare
+                                Technology Solutions</a></li>
+                        <li><a href="../campus_suite.html" class="text-sm text-gray-600 hover:text-primary transition">Campus &amp;
+                                Education Management System</a></li>
+                        <li><a href="../construction_manageme.html" class="text-sm text-gray-600 hover:text-primary transition">Builders &amp;
+                                Construction Management Systems</a></li>
+                        <li><a href="../hos.html" class="text-sm text-gray-600 hover:text-primary transition">Hostel Management
+                                System</a></li>
+                        <li><a href="../e_s_p.html" class="text-sm text-gray-600 hover:text-primary transition">Enterprise SaaS
+                                Platforms</a></li>
+                        <li><a href="../c_b_s.html" class="text-sm text-gray-600 hover:text-primary transition">Custom Business
+                                Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../../services/ux_design_product_strateg.html" class="text-sm text-gray-600 hover:text-primary transition">UI/UX Design and
+                                Product Development</a></li>
+                        <li><a href="../../services/mobile_app_development.html" class="text-sm text-gray-600 hover:text-primary transition">Mobile App
+                                Development</a></li>
+                        <li><a href="../../services/web_saas_development.html" class="text-sm text-gray-600 hover:text-primary transition">Web and SaaS
+                                Development</a></li>
+                        <li><a href="../../services/cloud_engineering_devops.html" class="text-sm text-gray-600 hover:text-primary transition">Cloud Engineering
+                                and DevOps</a></li>
+                        <li><a href="../../services/system_integration_migration.html" class="text-sm text-gray-600 hover:text-primary transition">System Integration
+                                and Migration</a></li>
+                        <li><a href="../../services/support_managed_services.html" class="text-sm text-gray-600 hover:text-primary transition">Support and Managed
+                                Services</a></li>
+                        <li><a href="../../services/ai_intelligence.html" class="text-sm text-gray-600 hover:text-primary transition">AI &
+                                Intelligence</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-dark mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../../about.html" class="text-sm text-gray-600 hover:text-primary transition">About</a></li>
+                        <li><a href="../../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Careers</a></li>
+                        <!-- <li><a href="../../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Blog</a></li> -->
+                        <li><a href="../../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Contact</a></li>
+                        <!-- <li><a href="../../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Privacy</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+           <!-- E-E-A-T Signals - Authoritativeness & Trustworthiness -->
+            <div class="border-t border-gray-200 pt-8 mt-12">
+                <div class="grid lg:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-brain text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">AI & Digital Transformation</h4>
+                        <p class="text-sm text-gray-600">Helping organizations adopt AI, automation, and modern digital technologies to improve efficiency and business outcomes.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">Certified AI & PM Professionals</h4>
+                        <p class="text-sm text-gray-600">Certified professionals with expertise in Artificial Intelligence, Project Management, Digital Transformation, and Enterprise Software Solutions.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-cloud text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2"> Cloud & Enterprise Solutions</h4>
+                        <p class="text-sm text-gray-600">Developing scalable web, mobile, cloud, and enterprise applications tailored to organizational needs</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-8">
+                    <p class="text-sm text-gray-600 mb-4">
+                       
+                        Our content is developed by experienced AI professionals, project managers, software engineers, and technology consultants, combining practical industry knowledge with the latest advancements in AI and digital transformation.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-xs mb-4 lg:mb-0">
+                        © 2012-26 Max Intelligence. All rights reserved.
+                    </p>
+                    <!-- <div class="flex items-center space-x-6 text-xs">
+                    <a href="terms.html" class="text-gray-500 hover:text-primary transition">Terms</a>
+                    <a href="privacy.html" class="text-gray-500 hover:text-primary transition">Privacy</a>
+                    <a href="cookies.html" class="text-gray-500 hover:text-primary transition">Cookies</a>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-section');
+            if (!sections.length) return;
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReducedMotion) {
+                sections.forEach(section => section.classList.add('is-visible'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.15
+            });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+    
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/talk-expert-modal.php'; ?>
+    <script src="../../assets/js/talk-expert-loader.js"></script>
+    <script src="../../assets/js/img-fallback.js" defer></script>
+    <script src="../../assets/js/cta-router.js" defer></script>
+</body>
+</html>

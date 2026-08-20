@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design & Product Strategy</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#DC2626',
+                        'brand-dark': '#111827',
+                        'brand-gray': {
+                            '100': '#F3F4F6',
+                            '200': '#E5E7EB',
+                            '500': '#6B7280',
+                            '700': '#374151'
+                        },
+                        primary: '#DC2626',
+                        secondary: '#991B1B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB',
+                        softgray: '#E5E7EB',
+                        teal: '#0D9488',
+                        accent: '#64748B'
+                    },
+                    fontFamily: {
+                        'sans': ['Comfortaa', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900">
+
+ <header id="header" class="fixed top-0 left-0 right-0 bg-white border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+    <a href="../index.html" class="flex items-center space-x-1">
+        <div class="w-14 h-14 flex items-center justify-center">
+            <img src="../assets/img/max-logo.png"
+                 alt="Max Intelligence Logo">
+        </div>
+        <span class="text-2xl font-semibold text-dark">Max <span
+                class="text-primary">Intelligence</span></span>
+    </a>
+</div>
+
+                
+                   <nav class="hidden lg:flex items-center space-x-1">
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Solutions</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-4xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Solutions</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/ai_ma.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                                    Learning</span>
+                                            </a></li>
+                                        <li><a href="../solutions/healthcare_technology.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fas fa-stethoscope text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                                    Technology Solutions</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus_suite.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-folder-closed text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                                    Education Management System</span>
+                                            </a></li>
+                                        <li><a href="../solutions/construction_manageme.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                                    Construction Management Systems</span>
+                                            </a></li>
+                                        <li><a href="../solutions/hos.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-address-book text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                                    System</span>
+                                            </a></li>
+                                        <li><a href="../solutions/e_s_p.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                                    Platforms</span>
+                                            </a></li>
+                                        <li><a href="../solutions/c_b_s.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                                    Solutions</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Campus &amp; Education
+                                        Management System</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/campus/acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Solution</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#solutions-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Solutions
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div
+                            class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-3xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="ux_design_product_strateg.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-group text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                                    Product Development</span>
+                                            </a></li>
+                                        <li><a href="mobile_app_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-mobile text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="web_saas_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="cloud_engineering_devops.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-server text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                                    and DevOps</span>
+                                            </a></li>
+                                        <li><a href="system_integration_migration.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-laptop-code text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">System Integration
+                                                    and Migration</span>
+                                            </a></li>
+                                        <li><a href="support_managed_services.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                                    Services</span>
+                                            </a></li>
+                                        <li><a href="ai_intelligence.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-microchip text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI &
+                                                    Intelligence</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Services</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#services-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Services
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../about.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a>
+                    <a href="../contact-max.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <button id="talk-to-expert-btn" type="button"
+                        class="hidden lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                        Talk to Expert
+                    </button>
+                    <a href="../contact-max.html"
+                        class="hidden sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a>
+                   <button id="mobile-menu-btn"
+                        class="lg:hidden w-10 h-10 flex items-center justify-center text-white bg-gray-800 border border-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition"
+                        aria-label="Toggle mobile menu">
+                        <span id="mobile-menu-icon" class="text-2xl leading-none font-light" aria-hidden="true">☰</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-2xl">
+            <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+
+                <button id="mobile-solutions-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Solutions</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-solutions-icon"></i>
+                </button>
+                <div id="mobile-solutions-menu" class="hidden pl-4 space-y-1">
+
+                    <div>
+                       
+                        <ul class="space-y-2">
+                            <li><a href="../solutions/ai_ma.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-lightbulb text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                        Learning</span>
+                                </a></li>
+                            <li><a href="../solutions/healthcare_technology.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fas fa-stethoscope text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                        Technology Solutions</span>
+                                </a></li>
+                            <li><a href="../solutions/campus_suite.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-folder-closed text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                        Education Management System</span>
+                                </a>
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/campus/acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive
+                                                    Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="../solutions/construction_manageme.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-building text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                        Construction Management Systems</span>
+                                </a></li>
+                            <li><a href="../solutions/hos.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-address-book text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                        System</span>
+                                </a></li>
+                            <li><a href="../solutions/e_s_p.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-gem text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                        Platforms</span>
+                                </a></li>
+                            <li><a href="../solutions/c_b_s.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                        Solutions</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="mobile-services-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Services</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-services-icon"></i>
+                </button>
+                <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
+                    <div>
+                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                            Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="../services/ux_design_product_strateg.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-group text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                        Product Development</span>
+                                </a></li>
+                            <li><a href="../services/mobile_app_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-mobile text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../services/web_saas_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../services/cloud_engineering_devops.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-server text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                        and DevOps</span>
+                                </a></li>
+                            <li><a href="../services/system_integration_migration.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-laptop-code text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">System Integration
+                                        and Migration</span>
+                                </a></li>
+                            <li><a href="../services/support_managed_services.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                        Services</span>
+                                </a></li>
+                            <li><a href="../services/ai_intelligence.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-microchip text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI &
+                                        Intelligence</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../about.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../contact-max.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><button
+                    class=" lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                    Talk to Expert
+                </button></div> 
+               <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../contact-max.html"
+                    class=" sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a></div> 
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Configuration for submenus
+            const submenus = [
+                { btn: 'mobile-solutions-btn', menu: 'mobile-solutions-menu', icon: 'mobile-solutions-icon' },
+                { btn: 'mobile-services-btn', menu: 'mobile-services-menu', icon: 'mobile-services-icon' }
+            ];
+
+            // 1. Toggle Main Mobile Menu
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+
+                // Swap Icon (Bars to X)
+                const svgPath = mobileBtn.querySelector('path');
+                if (isOpen) {
+                    // Bars Icon
+                    svgPath.setAttribute('d', 'M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z');
+                } else {
+                    // X Icon
+                    svgPath.setAttribute('d', 'M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z');
+                }
+            });
+
+            // 2. Handle Submenus Logic
+            submenus.forEach(item => {
+                const btn = document.getElementById(item.btn);
+                const menu = document.getElementById(item.menu);
+                const icon = document.getElementById(item.icon);
+
+                if (btn && menu) {
+                    btn.addEventListener('click', (event) => {
+                        event.stopPropagation();
+
+                        const shouldOpen = menu.classList.contains('hidden');
+
+                        submenus.forEach(other => {
+                            const otherMenu = document.getElementById(other.menu);
+                            const otherIcon = document.getElementById(other.icon);
+                            if (otherMenu) otherMenu.classList.add('hidden');
+                            if (otherIcon) otherIcon.classList.remove('rotate-180');
+                        });
+
+                        if (shouldOpen) {
+                            menu.classList.remove('hidden');
+                            if (icon) icon.classList.add('rotate-180');
+                        } else {
+                            menu.classList.add('hidden');
+                            if (icon) icon.classList.remove('rotate-180');
+                        }
+                    });
+                }
+            });
+
+            const megaItems = Array.from(document.querySelectorAll('nav .nav-item'));
+
+            const closeMegaMenus = () => {
+                megaItems.forEach(item => {
+                    const button = item.querySelector('button');
+                    const menu = item.querySelector('.mega-menu');
+                    if (menu) menu.classList.add('hidden');
+                    if (button) button.setAttribute('aria-expanded', 'false');
+                });
+            };
+
+            megaItems.forEach(item => {
+                const button = item.querySelector('button');
+                const menu = item.querySelector('.mega-menu');
+
+                if (!button || !menu) return;
+
+                button.setAttribute('aria-expanded', 'false');
+
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const shouldOpen = menu.classList.contains('hidden');
+                    closeMegaMenus();
+
+                    if (shouldOpen) {
+                        menu.classList.remove('hidden');
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                menu.addEventListener('click', (event) => event.stopPropagation());
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('nav .nav-item')) {
+                    closeMegaMenus();
+                }
+            });
+
+        });
+    </script>
+
+<main id="hero-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 rounded-full">
+                    <div class="w-2 h-2 bg-brand-red rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-brand-red">UI/UX Design & Product Strategy</span>
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-bold text-brand-dark leading-tight">
+                    Designing Products That Work — <span class="text-brand-red">Not Just Look Good</span>
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    User-centered design, system thinking, and product strategy for scalable digital platforms.
+                </p>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                    <button class="px-8 py-4 bg-brand-red text-white font-semibold rounded-lg hover:bg-red-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        Talk to a Product Designer
+                    </button>
+                    <button class="px-8 py-4 border-2 border-gray-200 text-brand-dark font-semibold rounded-lg hover:border-brand-red hover:text-brand-red transition-all">
+                        View Case Studies
+                    </button>
+                </div>
+                <div class="flex items-center space-x-8 pt-8 border-t border-gray-100">
+                    <div>
+                        <div class="text-3xl font-bold text-brand-dark">150+</div>
+                        <div class="text-sm text-gray-500">Products Designed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-dark">98%</div>
+                        <div class="text-sm text-gray-500">Client Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-dark">12+</div>
+                        <div class="text-sm text-gray-500">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-8 -left-8 w-72 h-72 bg-red-100 rounded-full opacity-20 blur-3xl"></div>
+                <div class="absolute -bottom-8 -right-8 w-96 h-96 bg-brand-red/10 rounded-full opacity-20 blur-3xl"></div>
+                <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                    <div class="h-[500px] overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5513f7f0bd-135838a8303c9554300f.png" alt="Modern SaaS dashboard interface wireframe transitioning into high-fidelity UI design, clean corporate style, minimal aesthetic, product design mockup" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section id="services-section" class="py-24 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full shadow-sm mb-6">
+                <i class="fa-solid fa-layer-group text-brand-red text-sm"></i>
+                <span class="text-sm font-medium text-gray-700">What We Do</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
+                End-to-End Design Services
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                From discovery to delivery, we craft digital experiences that drive business results
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div id="service-card-1" class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-brand-red group">
+                <div class="w-16 h-16 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors">
+                    <i class="fa-solid fa-magnifying-glass-chart text-2xl text-brand-red group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Product Discovery & Research</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Deep user research, competitive analysis, and market validation to define product-market fit
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>User interviews & surveys</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Competitive analysis</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Market research & trends</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="service-card-2" class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-brand-red group">
+                <div class="w-16 h-16 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors">
+                    <i class="fa-solid fa-sitemap text-2xl text-brand-red group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">UX Architecture & Flows</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Strategic information architecture and user flows that guide users to success
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Information architecture</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>User flow mapping</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Wireframing & prototyping</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="service-card-3" class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-brand-red group">
+                <div class="w-16 h-16 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors">
+                    <i class="fa-solid fa-palette text-2xl text-brand-red group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">UI Design Systems</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Scalable design systems that ensure consistency across your entire product ecosystem
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Component libraries</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Design tokens & guidelines</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Brand consistency</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="service-card-4" class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-brand-red group">
+                <div class="w-16 h-16 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red transition-colors">
+                    <i class="fa-solid fa-rocket text-2xl text-brand-red group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">SaaS Usability Optimization</h3>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Data-driven optimization to improve conversion, retention, and user satisfaction
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Usability testing & audits</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>A/B testing & analytics</span>
+                    </li>
+                    <li class="flex items-start text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-brand-red mr-2 mt-1"></i>
+                        <span>Conversion optimization</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="workflow-section" class="py-24 bg-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-full shadow-sm mb-6">
+                <i class="fa-solid fa-diagram-project text-brand-red text-sm"></i>
+                <span class="text-sm font-medium text-gray-700">How We Work</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
+                Our Proven Design Process
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                A systematic approach to creating products that users love and businesses grow with
+            </p>
+        </div>
+        <div class="relative">
+            <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-gray-200 via-brand-red to-gray-200 transform -translate-y-1/2 hidden lg:block"></div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+                <div id="workflow-step-1" class="text-center group">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-white border-4 border-brand-red rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-compass text-3xl text-brand-red"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            1
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Discover</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Research, interviews, and competitive analysis to understand your users and market
+                    </p>
+                </div>
+                <div id="workflow-step-2" class="text-center group">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-white border-4 border-brand-red rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-lightbulb text-3xl text-brand-red"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            2
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Define</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Synthesize insights into clear problem statements and strategic direction
+                    </p>
+                </div>
+                <div id="workflow-step-3" class="text-center group">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-white border-4 border-brand-red rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-pen-ruler text-3xl text-brand-red"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            3
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Design</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Create wireframes, prototypes, and high-fidelity designs with design systems
+                    </p>
+                </div>
+                <div id="workflow-step-4" class="text-center group">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-white border-4 border-brand-red rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-flask text-3xl text-brand-red"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            4
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Validate</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Test with real users, gather feedback, and iterate based on data
+                    </p>
+                </div>
+                <div id="workflow-step-5" class="text-center group">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-24 h-24 bg-white border-4 border-brand-red rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-chart-line text-3xl text-brand-red"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            5
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Scale</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Launch, monitor, optimize, and continuously improve based on metrics
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16 bg-gradient-to-br from-gray-50 to-white rounded-2xl p-12 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-clock text-brand-red text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">Fast Turnaround</h4>
+                        <p class="text-sm text-gray-600">Typical project timeline: 4-8 weeks depending on scope</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-comments text-brand-red text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">Collaborative</h4>
+                        <p class="text-sm text-gray-600">Weekly syncs and continuous feedback loops with your team</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-brand-red text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">Quality Assured</h4>
+                        <p class="text-sm text-gray-600">Multiple review cycles and rigorous testing before delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ai-intelligence-section" class="py-24 bg-gradient-to-br from-brand-dark via-gray-900 to-brand-dark text-white relative overflow-hidden fade-section">
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-red rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-red-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 rounded-full backdrop-blur-sm">
+                    <i class="fa-solid fa-brain text-brand-red"></i>
+                    <span class="text-sm font-medium">AI as Intelligence</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+                    Powered by AI, Guided by Human Expertise
+                </h2>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    We leverage cutting-edge AI to augment our design process—analyzing user behavior patterns, generating insights, and optimizing interfaces for maximum impact.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-red/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-chart-simple text-brand-red text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">AI-Assisted Research Insights</h4>
+                            <p class="text-gray-400">Analyze thousands of user interactions to uncover hidden patterns and opportunities</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-red/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-grid-2 text-brand-red text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Usability Pattern Recognition</h4>
+                            <p class="text-gray-400">Machine learning models identify usability issues before users encounter them</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-red/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-wand-magic-sparkles text-brand-red text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Design Optimization</h4>
+                            <p class="text-gray-400">Predictive analytics to test and optimize design decisions for better outcomes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button class="px-8 py-4 bg-brand-red text-white font-semibold rounded-lg hover:bg-red-700 transition-all shadow-lg">
+                        Learn More About Our AI Approach
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 shadow-2xl">
+                    <div class="h-[400px] overflow-hidden rounded-xl">
+                        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e1721ec1d8-1d1a1b2cf47e83677de0.png" alt="AI neural network visualization for UX design, data analytics dashboard, machine learning interface, dark theme with red accents, futuristic technology" />
+                    </div>
+                    <div class="mt-6 grid grid-cols-3 gap-4">
+                        <div class="bg-white/5 rounded-lg p-4 border border-white/10">
+                            <div class="text-2xl font-bold text-brand-red mb-1">87%</div>
+                            <div class="text-xs text-gray-400">Accuracy Rate</div>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-4 border border-white/10">
+                            <div class="text-2xl font-bold text-brand-red mb-1">3.2x</div>
+                            <div class="text-xs text-gray-400">Faster Insights</div>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-4 border border-white/10">
+                            <div class="text-2xl font-bold text-brand-red mb-1">45%</div>
+                            <div class="text-xs text-gray-400">Time Saved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="industries-section" class="py-24 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full shadow-sm mb-6">
+                <i class="fa-solid fa-building text-brand-red text-sm"></i>
+                <span class="text-sm font-medium text-gray-700">Who It's For</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
+                Industries We Serve
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Specialized expertise across diverse sectors, delivering tailored solutions for unique challenges
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div id="industry-card-1" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="h-48 overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0cbad166a2-c70177c6c566683bb3fb.png" alt="Modern education technology platform, e-learning interface, students using digital tools, clean minimal style" />
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Education</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Learning management systems, student portals, and educational platforms that engage and inspire
+                    </p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-blue-600 mr-2"></i>
+                            <span>LMS platforms</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-blue-600 mr-2"></i>
+                            <span>Student engagement tools</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-blue-600 mr-2"></i>
+                            <span>Assessment systems</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="industry-card-2" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="h-48 overflow-hidden bg-gradient-to-br from-green-50 to-green-100">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a00f1bca7d-fad4a0d820d826553362.png" alt="Healthcare medical technology interface, telemedicine platform, patient care dashboard, modern clinical design" />
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-heart-pulse text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Healthcare</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Patient-centered digital health solutions that improve care delivery and outcomes
+                    </p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                            <span>Telemedicine platforms</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                            <span>Patient portals</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-green-600 mr-2"></i>
+                            <span>EHR systems</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="industry-card-3" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="h-48 overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e6c2da009b-71ebfe1f97449057b9a1.png" alt="Modern SaaS software interface, cloud platform dashboard, business analytics tools, professional enterprise design" />
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-cloud text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">SaaS</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Scalable software platforms designed for growth, retention, and exceptional user experiences
+                    </p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-purple-600 mr-2"></i>
+                            <span>B2B platforms</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-purple-600 mr-2"></i>
+                            <span>Analytics dashboards</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-purple-600 mr-2"></i>
+                            <span>Workflow automation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="industry-card-4" class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group">
+                <div class="h-48 overflow-hidden bg-gradient-to-br from-red-50 to-red-100">
+                    <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8e2ca9c1e1-73f330e3cb0679c53b8b.png" alt="Enterprise corporate software interface, business management system, professional dashboard, corporate design aesthetic" />
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-briefcase text-2xl text-brand-red"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Enterprise</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Complex enterprise systems that streamline operations and empower teams at scale
+                    </p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-brand-red mr-2"></i>
+                            <span>Internal tools</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-brand-red mr-2"></i>
+                            <span>Process automation</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-600">
+                            <i class="fa-solid fa-check text-brand-red mr-2"></i>
+                            <span>Data visualization</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="case-studies-section" class="py-24 bg-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gray-50 rounded-full shadow-sm mb-6">
+                <i class="fa-solid fa-trophy text-brand-red text-sm"></i>
+                <span class="text-sm font-medium text-gray-700">Success Stories</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
+                Featured Case Studies
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Real results from real projects—see how we've helped businesses transform their digital products
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div id="case-study-1" class="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="h-80 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ab075fd7ed-0586ecbb639ba682588f.png" alt="Modern healthcare telemedicine platform interface, patient dashboard, medical appointment scheduling, clean professional design" />
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Healthcare</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">SaaS</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3">HealthConnect Platform</h3>
+                    <p class="text-gray-600 mb-6">
+                        Redesigned telemedicine platform serving 50,000+ patients, improving appointment completion rates by 67% and patient satisfaction scores by 42%.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-gray-100">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">67%</div>
+                            <div class="text-xs text-gray-500">Higher Completion</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">42%</div>
+                            <div class="text-xs text-gray-500">More Satisfaction</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">50K+</div>
+                            <div class="text-xs text-gray-500">Active Users</div>
+                        </div>
+                    </div>
+                    <button class="text-brand-red font-semibold hover:underline flex items-center">
+                        View Full Case Study <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="case-study-2" class="bg-gradient-to-br from-gray-50 to-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="h-80 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff3ab88a84-8f1fc42c233c6ecf24f7.png" alt="Educational learning management system interface, online course platform, student dashboard with progress tracking, modern e-learning design" />
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">Education</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">Platform</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-3">EduFlow Learning Platform</h3>
+                    <p class="text-gray-600 mb-6">
+                        Complete UX overhaul of online learning platform used by 100+ institutions, increasing student engagement by 83% and course completion rates by 56%.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-gray-100">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">83%</div>
+                            <div class="text-xs text-gray-500">More Engagement</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">56%</div>
+                            <div class="text-xs text-gray-500">Higher Completion</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">100+</div>
+                            <div class="text-xs text-gray-500">Institutions</div>
+                        </div>
+                    </div>
+                    <button class="text-brand-red font-semibold hover:underline flex items-center">
+                        View Full Case Study <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials-section" class="py-24 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full shadow-sm mb-6">
+                <i class="fa-solid fa-star text-brand-red text-sm"></i>
+                <span class="text-sm font-medium text-gray-700">Client Testimonials</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-4">
+                What Our Clients Say
+            </h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Trusted by forward-thinking companies to deliver exceptional design solutions
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div id="testimonial-1" class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "Max Intelligence transformed our entire product experience. Their systematic approach and attention to detail resulted in a 40% increase in user engagement within the first month."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-bold text-brand-dark">Michael Chen</div>
+                        <div class="text-sm text-gray-500">VP Product, HealthTech Solutions</div>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonial-2" class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "Working with this team was a game-changer. They didn't just design—they understood our business goals and created a solution that directly impacted our bottom line."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-bold text-brand-dark">Sarah Martinez</div>
+                        <div class="text-sm text-gray-500">CEO, EduTech Platform</div>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonial-3" class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                    <i class="fa-solid fa-star text-yellow-400 ml-1"></i>
+                </div>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    "The design system they created has saved us countless hours and ensures consistency across our entire product suite. Exceptional work and highly professional team."
+                </p>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <div class="font-bold text-brand-dark">David Thompson</div>
+                        <div class="text-sm text-gray-500">CTO, Enterprise SaaS Co.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cta-section" class="py-24 bg-gradient-to-br from-brand-red to-red-700 text-white relative overflow-hidden fade-section">
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center relative">
+        <h2 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+            Ready to Design Better Digital Products?
+        </h2>
+        <p class="text-xl lg:text-2xl mb-12 text-red-100 max-w-3xl mx-auto">
+            Let's collaborate to create user experiences that drive business results and delight your customers
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <button class="px-10 py-5 bg-white text-brand-red font-bold text-lg rounded-lg hover:bg-gray-50 transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                Schedule a Discovery Call
+            </button>
+            <button class="px-10 py-5 border-2 border-white text-white font-bold text-lg rounded-lg hover:bg-white hover:text-brand-red transition-all">
+                View Our Portfolio
+            </button>
+        </div>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-white/20">
+            <div>
+                <div class="text-4xl font-bold mb-2">48h</div>
+                <div class="text-red-100">Initial Response Time</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold mb-2">100%</div>
+                <div class="text-red-100">Satisfaction Guarantee</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold mb-2">NDA</div>
+                <div class="text-red-100">Protected & Confidential</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <footer id="footer" class="bg-gray-50 border-t border-gray-200 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-1 mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="../assets/img/max-logo.png"
+                                alt="max-intell">
+                        </div>
+                        <span class="text-l font-semibold text-dark">Max <span
+                                class="text-primary">Intelligence</span></span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        AI-powered SaaS platforms for intelligent digital transformation
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/max-intelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../solutions/ai_ma.html" class="text-sm text-gray-600 hover:text-primary transition">AI &amp; Machine
+                                Learning</a></li>
+                        <li><a href="../solutions/healthcare_technology.html" class="text-sm text-gray-600 hover:text-primary transition">Healthcare
+                                Technology Solutions</a></li>
+                        <li><a href="../solutions/campus_suite.html" class="text-sm text-gray-600 hover:text-primary transition">Campus &amp;
+                                Education Management System</a></li>
+                        <li><a href="../solutions/construction_manageme.html" class="text-sm text-gray-600 hover:text-primary transition">Builders &amp;
+                                Construction Management Systems</a></li>
+                        <li><a href="../solutions/hos.html" class="text-sm text-gray-600 hover:text-primary transition">Hostel Management
+                                System</a></li>
+                        <li><a href="../solutions/e_s_p.html" class="text-sm text-gray-600 hover:text-primary transition">Enterprise SaaS
+                                Platforms</a></li>
+                        <li><a href="../solutions/c_b_s.html" class="text-sm text-gray-600 hover:text-primary transition">Custom Business
+                                Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="ux_design_product_strateg.html" class="text-sm text-gray-600 hover:text-primary transition">UI/UX Design and
+                                Product Development</a></li>
+                        <li><a href="mobile_app_development.html" class="text-sm text-gray-600 hover:text-primary transition">Mobile App
+                                Development</a></li>
+                        <li><a href="web_saas_development.html" class="text-sm text-gray-600 hover:text-primary transition">Web and SaaS
+                                Development</a></li>
+                        <li><a href="cloud_engineering_devops.html" class="text-sm text-gray-600 hover:text-primary transition">Cloud Engineering
+                                and DevOps</a></li>
+                        <li><a href="system_integration_migration.html" class="text-sm text-gray-600 hover:text-primary transition">System Integration
+                                and Migration</a></li>
+                        <li><a href="support_managed_services.html" class="text-sm text-gray-600 hover:text-primary transition">Support and Managed
+                                Services</a></li>
+                        <li><a href="ai_intelligence.html" class="text-sm text-gray-600 hover:text-primary transition">AI &
+                                Intelligence</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-dark mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../about.html" class="text-sm text-gray-600 hover:text-primary transition">About</a></li>
+                        <li><a href="../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Careers</a></li>
+                        <!-- <li><a href="../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Blog</a></li> -->
+                        <li><a href="../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Contact</a></li>
+                        <!-- <li><a href="../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Privacy</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- E-E-A-T Signals - Authoritativeness & Trustworthiness -->
+            <div class="border-t border-gray-200 pt-8 mt-12">
+                <div class="grid lg:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-brain text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">AI & Digital Transformation</h4>
+                        <p class="text-sm text-gray-600">Helping organizations adopt AI, automation, and modern digital technologies to improve efficiency and business outcomes.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">Certified AI & PM Professionals</h4>
+                        <p class="text-sm text-gray-600">Certified professionals with expertise in Artificial Intelligence, Project Management, Digital Transformation, and Enterprise Software Solutions.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-cloud text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2"> Cloud & Enterprise Solutions</h4>
+                        <p class="text-sm text-gray-600">Developing scalable web, mobile, cloud, and enterprise applications tailored to organizational needs</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-8">
+                    <p class="text-sm text-gray-600 mb-4">
+                       
+                        Our content is developed by experienced AI professionals, project managers, software engineers, and technology consultants, combining practical industry knowledge with the latest advancements in AI and digital transformation.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-xs mb-4 lg:mb-0">
+                        © 2012-26 Max Intelligence. All rights reserved.
+                    </p>
+                    <!-- <div class="flex items-center space-x-6 text-xs">
+                    <a href="terms.html" class="text-gray-500 hover:text-primary transition">Terms</a>
+                    <a href="privacy.html" class="text-gray-500 hover:text-primary transition">Privacy</a>
+                    <a href="cookies.html" class="text-gray-500 hover:text-primary transition">Cookies</a>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-section');
+            if (!sections.length) return;
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReducedMotion) {
+                sections.forEach(section => section.classList.add('is-visible'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.15
+            });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+    
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/talk-expert-modal.php'; ?>
+    <script src="../assets/js/talk-expert-loader.js"></script>
+    <script src="../assets/js/img-fallback.js" defer></script>
+    <script src="../assets/js/cta-router.js" defer></script>
+</body>
+</html>

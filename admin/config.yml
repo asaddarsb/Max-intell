@@ -1,0 +1,25 @@
+# Netlify CMS configuration
+# Update `backend` settings as needed (repo/branch) after connecting to Netlify
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+# If you prefer GitHub backend instead of Git Gateway, change backend to:
+# backend:
+#   name: github
+#   repo: owner/repo
+#   branch: main

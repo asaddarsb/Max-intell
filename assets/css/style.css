@@ -1,0 +1,241 @@
+ /* Vertical scrollbar width */
+ ::-webkit-scrollbar {
+     width: 8px;
+     height: 8px
+ }
+
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+     border-radius: 10px
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: #DC2626;
+     border-radius: 10px;
+     border: 2px solid #f1f1f1
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+     background: #991B1B
+ }
+
+ body {
+     font-family: 'Comfortaa', sans-serif;
+     overflow-x: hidden;
+ }
+
+ html {
+     overflow-x: hidden;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-10px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .mega-menu {
+     animation: fadeIn 0.3s ease-out;
+     will-change: display;
+     overflow-x: hidden;
+     overflow-y: auto;
+     max-height: 80vh;
+ }
+
+ .nav-item {
+     position: relative;
+ }
+
+ .nav-item:hover .mega-menu {
+     display: block !important;
+ }
+
+ .card-hover {
+     transition: all 0.3s ease;
+ }
+
+ .card-hover:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 20px 40px rgba(220, 38, 38, 0.08);
+ }
+
+ /* Ensure proper stacking and positioning */
+ header {
+     z-index: 50;
+ }
+
+ /* Responsive mega-menu */
+ @media (max-width: 1280px) {
+     .mega-menu {
+         width: calc(100vw - 32px) !important;
+         margin-left: 0vw !important;
+         margin-right: auto !important;
+         left: 0% !important;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .mega-menu {
+         width: calc(100vw - 24px) !important;
+         margin-left: -50vw !important;
+         left: 50% !important;
+         max-width: none !important;
+         padding: 12px !important;
+     }
+
+     .mega-menu .grid {
+         grid-template-columns: 1fr !important;
+         gap: 1rem !important;
+     }
+ }
+
+ @media (max-width: 640px) {
+     .mega-menu {
+         width: calc(100vw - 16px) !important;
+     }
+
+     .grid[class*="grid-cols-2"],
+     .grid[class*="grid-cols-3"],
+     .grid[class*="grid-cols-4"],
+     .grid[class*="grid-cols-5"],
+     .grid[class*="grid-cols-6"] {
+         grid-template-columns: 1fr !important;
+     }
+
+     [class*="space-x-4"],
+     [class*="space-x-6"],
+     [class*="space-x-8"] {
+         flex-wrap: wrap !important;
+         gap: 0.75rem !important;
+     }
+ }
+
+ @media (max-width: 1024px) {
+     [class*="h-[600px]"],
+     [class*="h-[700px]"],
+     [class*="h-[750px]"] {
+         height: auto !important;
+         min-height: auto !important;
+         padding-top: 5rem !important;
+         padding-bottom: 4rem !important;
+     }
+ }
+
+ #hero-section {
+     background-image: url("../../hero-bg.svg");
+     background-position: center;
+     /* Center the image */
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+     ;
+ }
+
+ #solutions-overview {
+     background-image: url("../../hero-bg-3.svg");
+     background-position: center;
+     /* Center the image */
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+ }
+
+ #why-max-intelligence {
+     background-image: url("../../hero-bg-b.svg");
+     background-position: center;
+     /* Center the image */
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+ }
+
+ #core-pillars {
+     background-image: url("../../hero-bg-1.svg");
+     background-position: center;
+     /* Center the image */
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+ }
+
+ [id="hero-section"],
+ [id="hero-slider"],
+ [id="ai-hero-section"],
+ [id="healthcare-hero-section"] {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: min(90vh, 760px);
+     width: 100%;
+     box-sizing: border-box;
+ }
+ /* ============================================
+   Scroll Fade In / Fade Out (cross-browser)
+   Sections fade + rise in on entry, and fade
+   back out on exit in either scroll direction.
+   ============================================ */
+        .fade-section {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .fade-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .fade-section,
+            .fade-section.is-visible {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+
+/* =====================================================================
+   Responsive safety net & fixes  (added during QA pass)
+   ===================================================================== */
+
+/* 1) Stop flex/grid children from overflowing their track — the #1 cause
+      of horizontal scroll and content being cut off on small screens. */
+*, *::before, *::after { min-width: 0; }
+
+/* 2) Never allow the page to scroll sideways. */
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/* 3) Media never overflows its container. (Height left to Tailwind h-*
+      utilities so fixed-size avatars/logos keep their shape.) */
+img, svg, video, canvas { max-width: 100%; }
+
+/* 4) Long words / URLs wrap instead of pushing width out. */
+p, li, h1, h2, h3, h4, a, span, td { overflow-wrap: anywhere; }
+
+/* 5) Client / company logo strips: consistent, contained, aligned. */
+img[src*="max-client/"] {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+@media (min-width: 768px) { img[src*="max-client/"] { height: 3rem; } }
+
+/* 6) Clamp oversized display headings on phones so they don't get clipped
+      or force overflow. Applied only below the sm breakpoint. */
+@media (max-width: 640px) {
+  .text-8xl { font-size: 3rem   !important; line-height: 1.05 !important; }
+  .text-7xl { font-size: 2.75rem !important; line-height: 1.08 !important; }
+  .text-6xl { font-size: 2.25rem !important; line-height: 1.1  !important; }
+  .text-5xl { font-size: 2rem    !important; line-height: 1.12 !important; }
+}
+
+/* 7) Any horizontally-scrolling row degrades gracefully. */
+.overflow-x-auto { -webkit-overflow-scrolling: touch; }

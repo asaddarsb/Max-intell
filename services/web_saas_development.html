@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web & SaaS Development</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#DC2626',
+                        'brand-dark': '#111827',
+                        'brand-gray': {
+                            '100': '#F3F4F6',
+                            '200': '#E5E7EB',
+                            '500': '#6B7280',
+                            '700': '#374151'
+                        },
+                        primary: '#DC2626',
+                        secondary: '#991B1B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB',
+                        softgray: '#E5E7EB',
+                        teal: '#0D9488',
+                        accent: '#64748B'
+                    },
+                    fontFamily: {
+                        'sans': ['Comfortaa', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-white text-gray-900">
+
+ <header id="header" class="fixed top-0 left-0 right-0 bg-white border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+    <a href="../index.html" class="flex items-center space-x-1">
+        <div class="w-14 h-14 flex items-center justify-center">
+            <img src="../assets/img/max-logo.png"
+                 alt="Max Intelligence Logo">
+        </div>
+        <span class="text-2xl font-semibold text-dark">Max <span
+                class="text-primary">Intelligence</span></span>
+    </a>
+</div>
+
+                
+                   <nav class="hidden lg:flex items-center space-x-1">
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Solutions</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-4xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Solutions</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/ai_ma.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                                    Learning</span>
+                                            </a></li>
+                                        <li><a href="../solutions/healthcare_technology.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fas fa-stethoscope text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                                    Technology Solutions</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus_suite.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-folder-closed text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                                    Education Management System</span>
+                                            </a></li>
+                                        <li><a href="../solutions/construction_manageme.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                                    Construction Management Systems</span>
+                                            </a></li>
+                                        <li><a href="../solutions/hos.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-address-book text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                                    System</span>
+                                            </a></li>
+                                        <li><a href="../solutions/e_s_p.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                                    Platforms</span>
+                                            </a></li>
+                                        <li><a href="../solutions/c_b_s.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                                    Solutions</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Campus &amp; Education
+                                        Management System</h4>
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/campus/acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Solution</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#solutions-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Solutions
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item relative group">
+                        <button
+                            class="px-4 py-2 text-gray-600 hover:text-primary font-medium flex items-center space-x-1 transition">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div
+                            class="mega-menu hidden group-hover:block absolute top-full w-screen max-w-3xl bg-white border border-gray-100 rounded-lg shadow-xl p-6 z-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                                <div>
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li><a href="ux_design_product_strateg.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-object-group text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                                    Product Development</span>
+                                            </a></li>
+                                        <li><a href="mobile_app_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-mobile text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="web_saas_development.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                                    Development</span>
+                                            </a></li>
+                                        <li><a href="cloud_engineering_devops.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-server text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                                    and DevOps</span>
+                                            </a></li>
+                                        <li><a href="system_integration_migration.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-laptop-code text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">System Integration
+                                                    and Migration</span>
+                                            </a></li>
+                                        <li><a href="support_managed_services.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-window-maximize text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                                    Services</span>
+                                            </a></li>
+                                        <li><a href="ai_intelligence.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-microchip text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">AI &
+                                                    Intelligence</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-6">
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-sm">Featured Services</h4>
+                                    <p class="text-xs text-gray-600 mb-4">Intelligent systems built for scale, security
+                                        & insight</p>
+                                    <a href="#services-overview"
+                                        class="inline-flex items-center text-xs font-medium text-primary hover:text-secondary transition">
+                                        View All Services
+                                        <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../about.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a>
+                    <a href="../contact-max.html"
+                        class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <button id="talk-to-expert-btn" type="button"
+                        class="hidden lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                        Talk to Expert
+                    </button>
+                    <a href="../contact-max.html"
+                        class="hidden sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a>
+                   <button id="mobile-menu-btn"
+                        class="lg:hidden w-10 h-10 flex items-center justify-center text-white bg-gray-800 border border-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition"
+                        aria-label="Toggle mobile menu">
+                        <span id="mobile-menu-icon" class="text-2xl leading-none font-light" aria-hidden="true">☰</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-2xl">
+            <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+
+                <button id="mobile-solutions-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Solutions</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-solutions-icon"></i>
+                </button>
+                <div id="mobile-solutions-menu" class="hidden pl-4 space-y-1">
+
+                    <div>
+                       
+                        <ul class="space-y-2">
+                            <li><a href="../solutions/ai_ma.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-lightbulb text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI & Machine
+                                        Learning</span>
+                                </a></li>
+                            <li><a href="../solutions/healthcare_technology.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fas fa-stethoscope text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Healthcare
+                                        Technology Solutions</span>
+                                </a></li>
+                            <li><a href="../solutions/campus_suite.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-folder-closed text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Campus &amp;
+                                        Education Management System</span>
+                                </a>
+                                <div class="bg-brand-gray-dark rounded-lg p-6">
+
+                                    <ul class="space-y-2">
+                                        <li><a href="../solutions/campus/acadmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-lightbulb text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Acadmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/admax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-heart text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Admax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/libmax.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-building text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Libmax</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/qec_system.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-compass text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Quality
+                                                    Enhancement</span>
+                                            </a></li>
+                                        <li><a href="../solutions/campus/executive_dash.html"
+                                                class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                                <i class="fa-solid fa-gem text-primary"></i>
+                                                <span class="text-gray-700 group-hover:text-primary">Executive
+                                                    Dashboard</span>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li><a href="../solutions/construction_manageme.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-building text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Builders &amp;
+                                        Construction Management Systems</span>
+                                </a></li>
+                            <li><a href="../solutions/hos.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-address-book text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Hostel Management
+                                        System</span>
+                                </a></li>
+                            <li><a href="../solutions/e_s_p.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-gem text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Enterprise SaaS
+                                        Platforms</span>
+                                </a></li>
+                            <li><a href="../solutions/c_b_s.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-ungroup text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Custom Business
+                                        Solutions</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="mobile-services-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition">
+                    <span class="font-medium">Services</span>
+                    <i class="fas fa-chevron-down text-xs transition-transform" id="mobile-services-icon"></i>
+                </button>
+                <div id="mobile-services-menu" class="hidden pl-4 space-y-1">
+                    <div>
+                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                            Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="../services/ux_design_product_strateg.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-object-group text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">UI/UX Design and
+                                        Product Development</span>
+                                </a></li>
+                            <li><a href="../services/mobile_app_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-mobile text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Mobile App
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../services/web_saas_development.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Web and SaaS
+                                        Development</span>
+                                </a></li>
+                            <li><a href="../services/cloud_engineering_devops.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-server text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Cloud Engineering
+                                        and DevOps</span>
+                                </a></li>
+                            <li><a href="../services/system_integration_migration.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-laptop-code text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">System Integration
+                                        and Migration</span>
+                                </a></li>
+                            <li><a href="../services/support_managed_services.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-window-maximize text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">Support and Managed
+                                        Services</span>
+                                </a></li>
+                            <li><a href="../services/ai_intelligence.html"
+                                    class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition group text-sm">
+                                    <i class="fa-solid fa-microchip text-primary"></i>
+                                    <span class="text-gray-700 group-hover:text-primary">AI &
+                                        Intelligence</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../about.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">About</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../contact-max.html"
+                    class="px-4 py-2 text-gray-600 hover:text-primary font-medium transition text-sm">Contact</a></div> 
+                <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><button
+                    class=" lg:inline-flex items-center px-5 py-2.5 border border-gray-300 text-gray-700 rounded-lg hover:border-primary hover:text-primary transition font-medium text-sm">
+                    Talk to Expert
+                </button></div> 
+               <div class="max-w-7xl mx-auto px-6 py-4 space-y-1"><a href="../contact-max.html"
+                    class=" sm:inline-flex items-center px-5 py-2.5 bg-primary text-white rounded-lg hover:bg-secondary transition font-medium text-sm shadow-sm">Request Demo</a></div> 
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Configuration for submenus
+            const submenus = [
+                { btn: 'mobile-solutions-btn', menu: 'mobile-solutions-menu', icon: 'mobile-solutions-icon' },
+                { btn: 'mobile-services-btn', menu: 'mobile-services-menu', icon: 'mobile-services-icon' }
+            ];
+
+            // 1. Toggle Main Mobile Menu
+            mobileBtn.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+
+                // Swap Icon (Bars to X)
+                const svgPath = mobileBtn.querySelector('path');
+                if (isOpen) {
+                    // Bars Icon
+                    svgPath.setAttribute('d', 'M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z');
+                } else {
+                    // X Icon
+                    svgPath.setAttribute('d', 'M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z');
+                }
+            });
+
+            // 2. Handle Submenus Logic
+            submenus.forEach(item => {
+                const btn = document.getElementById(item.btn);
+                const menu = document.getElementById(item.menu);
+                const icon = document.getElementById(item.icon);
+
+                if (btn && menu) {
+                    btn.addEventListener('click', (event) => {
+                        event.stopPropagation();
+
+                        const shouldOpen = menu.classList.contains('hidden');
+
+                        submenus.forEach(other => {
+                            const otherMenu = document.getElementById(other.menu);
+                            const otherIcon = document.getElementById(other.icon);
+                            if (otherMenu) otherMenu.classList.add('hidden');
+                            if (otherIcon) otherIcon.classList.remove('rotate-180');
+                        });
+
+                        if (shouldOpen) {
+                            menu.classList.remove('hidden');
+                            if (icon) icon.classList.add('rotate-180');
+                        } else {
+                            menu.classList.add('hidden');
+                            if (icon) icon.classList.remove('rotate-180');
+                        }
+                    });
+                }
+            });
+
+            const megaItems = Array.from(document.querySelectorAll('nav .nav-item'));
+
+            const closeMegaMenus = () => {
+                megaItems.forEach(item => {
+                    const button = item.querySelector('button');
+                    const menu = item.querySelector('.mega-menu');
+                    if (menu) menu.classList.add('hidden');
+                    if (button) button.setAttribute('aria-expanded', 'false');
+                });
+            };
+
+            megaItems.forEach(item => {
+                const button = item.querySelector('button');
+                const menu = item.querySelector('.mega-menu');
+
+                if (!button || !menu) return;
+
+                button.setAttribute('aria-expanded', 'false');
+
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    const shouldOpen = menu.classList.contains('hidden');
+                    closeMegaMenus();
+
+                    if (shouldOpen) {
+                        menu.classList.remove('hidden');
+                        button.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                menu.addEventListener('click', (event) => event.stopPropagation());
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('nav .nav-item')) {
+                    closeMegaMenus();
+                }
+            });
+
+        });
+    </script>
+<main id="main-content" class="py-0 lg:py-0">
+<section id="hero-section" class="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white fade-section lg:h-[90vh] items-center justify-center">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 rounded-full">
+                    <i class="fa-solid fa-rocket text-brand-red text-sm"></i>
+                    <span class="text-sm font-medium text-brand-red">Enterprise SaaS Development</span>
+                </div>
+                
+                <h1 class="text-5xl lg:text-6xl font-bold text-brand-dark leading-tight">
+                    Scalable Web & SaaS Platforms Built for Growth
+                </h1>
+                
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Secure, cloud-ready platforms designed for long-term performance.
+                </p>
+
+                <div class="flex items-center space-x-4 pt-4">
+                    <button class="px-8 py-4 bg-brand-red text-white font-medium rounded-lg hover:bg-red-700 transition-all shadow-lg shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30">
+                        Talk to SaaS Expert
+                    </button>
+                    <button class="px-8 py-4 text-brand-dark font-medium border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                        View Portfolio
+                    </button>
+                </div>
+
+                <div class="flex items-center space-x-8 pt-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-green-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-brand-dark">Enterprise Security</div>
+                            <div class="text-xs text-gray-500">SOC 2 Compliant</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
+                            <i class="fa-solid fa-gauge-high text-blue-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-brand-dark">99.9% Uptime</div>
+                            <div class="text-xs text-gray-500">Cloud Infrastructure</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brand-red/10 to-transparent rounded-3xl"></div>
+                <div class="relative bg-white rounded-2xl shadow-2xl shadow-gray-200/50 p-8 border border-gray-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                            </div>
+                            <span class="text-sm font-medium text-gray-400">dashboard.saas.app</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-user text-gray-400 text-xs"></i>
+                            <i class="fa-solid fa-bell text-gray-400 text-xs"></i>
+                            <i class="fa-solid fa-gear text-gray-400 text-xs"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-gradient-to-br from-blue-50 to-blue-100/50 p-4 rounded-xl border border-blue-100">
+                                <i class="fa-solid fa-users text-blue-600 text-lg mb-2"></i>
+                                <div class="text-2xl font-bold text-brand-dark">24.5K</div>
+                                <div class="text-xs text-gray-600">Active Users</div>
+                            </div>
+                            <div class="bg-gradient-to-br from-green-50 to-green-100/50 p-4 rounded-xl border border-green-100">
+                                <i class="fa-solid fa-chart-line text-green-600 text-lg mb-2"></i>
+                                <div class="text-2xl font-bold text-brand-dark">$1.2M</div>
+                                <div class="text-xs text-gray-600">Revenue</div>
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-50 to-purple-100/50 p-4 rounded-xl border border-purple-100">
+                                <i class="fa-solid fa-rocket text-purple-600 text-lg mb-2"></i>
+                                <div class="text-2xl font-bold text-brand-dark">98.5%</div>
+                                <div class="text-xs text-gray-600">Satisfaction</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-semibold text-brand-dark">Performance Overview</span>
+                                <span class="text-xs text-gray-500">Last 30 days</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs text-gray-600">API Response Time</span>
+                                        <span class="text-xs font-semibold text-green-600">45ms</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-gradient-to-r from-green-500 to-green-600 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs text-gray-600">Database Performance</span>
+                                        <span class="text-xs font-semibold text-blue-600">Optimal</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <span class="text-xs text-gray-600">Server Uptime</span>
+                                        <span class="text-xs font-semibold text-brand-red">99.9%</span>
+                                    </div>
+                                    <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-gradient-to-r from-brand-red to-red-600 rounded-full" style="width: 99.9%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="bg-white border border-gray-200 p-3 rounded-lg">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <i class="fa-solid fa-layer-group text-brand-red text-sm"></i>
+                                    <span class="text-xs font-medium text-gray-600">Microservices</span>
+                                </div>
+                                <div class="text-lg font-bold text-brand-dark">12 Active</div>
+                            </div>
+                            <div class="bg-white border border-gray-200 p-3 rounded-lg">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <i class="fa-solid fa-cloud text-blue-600 text-sm"></i>
+                                    <span class="text-xs font-medium text-gray-600">Cloud Status</span>
+                                </div>
+                                <div class="text-lg font-bold text-brand-dark">Healthy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="what-we-build" class="py-24 bg-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gray-100 rounded-full mb-6">
+                <i class="fa-solid fa-code text-brand-dark text-sm"></i>
+                <span class="text-sm font-medium text-brand-dark">Our Capabilities</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                What We Build
+            </h2>
+            <p class="text-lg text-gray-600">
+                End-to-end SaaS solutions engineered for scale, security, and seamless user experiences.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="build-card-1" class="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-brand-red hover:shadow-xl hover:shadow-red-500/10 transition-all duration-300">
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-window-maximize text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Custom Web Platforms</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    Tailored web applications built with modern frameworks, optimized for performance and user engagement.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        React & Next.js
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Progressive Web Apps
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Responsive Design
+                    </li>
+                </ul>
+            </div>
+
+            <div id="build-card-2" class="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-brand-red hover:shadow-xl hover:shadow-red-500/10 transition-all duration-300">
+                <div class="w-14 h-14 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-building text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Multi-Tenant SaaS Systems</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    Scalable architecture supporting thousands of organizations with isolated data and custom branding.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Tenant Isolation
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        White-Label Options
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Subscription Management
+                    </li>
+                </ul>
+            </div>
+
+            <div id="build-card-3" class="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-brand-red hover:shadow-xl hover:shadow-red-500/10 transition-all duration-300">
+                <div class="w-14 h-14 bg-gradient-to-br from-green-50 to-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-diagram-project text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">API-First Architecture</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    RESTful and GraphQL APIs designed for seamless integrations and third-party connectivity.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        RESTful Services
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        GraphQL Endpoints
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Webhook Integration
+                    </li>
+                </ul>
+            </div>
+
+            <div id="build-card-4" class="group bg-white border border-gray-200 rounded-2xl p-8 hover:border-brand-red hover:shadow-xl hover:shadow-red-500/10 transition-all duration-300">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-lock text-brand-red text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Secure User Management</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    Enterprise-grade authentication, authorization, and user lifecycle management systems.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        SSO & OAuth 2.0
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Role-Based Access
+                    </li>
+                    <li class="flex items-center text-sm text-gray-600">
+                        <i class="fa-solid fa-check text-green-600 text-xs mr-2"></i>
+                        Audit Logging
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="workflow-section" class="py-24 bg-gradient-to-b from-gray-50 to-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full mb-6 shadow-sm">
+                <i class="fa-solid fa-sitemap text-brand-dark text-sm"></i>
+                <span class="text-sm font-medium text-brand-dark">Development Process</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                Our Proven Workflow
+            </h2>
+            <p class="text-lg text-gray-600">
+                A systematic approach to delivering enterprise-grade SaaS solutions on time and within budget.
+            </p>
+        </div>
+
+        <div class="relative">
+            <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-brand-red via-gray-300 to-brand-red transform -translate-y-1/2 hidden lg:block"></div>
+            
+            <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-8 relative">
+                <div id="workflow-step-1" class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-lightbulb text-brand-red text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-brand-red text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            1
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Plan</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Discovery sessions, requirements gathering, and strategic roadmap creation.
+                    </p>
+                </div>
+
+                <div id="workflow-step-2" class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-white border-4 border-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-compass-drafting text-blue-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            2
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Architect</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        System design, database modeling, and infrastructure planning for scale.
+                    </p>
+                </div>
+
+                <div id="workflow-step-3" class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-white border-4 border-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-code text-purple-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            3
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Develop</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Agile sprints with continuous integration and automated testing protocols.
+                    </p>
+                </div>
+
+                <div id="workflow-step-4" class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-white border-4 border-green-500 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-puzzle-piece text-green-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            4
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Integrate</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Third-party APIs, payment gateways, and enterprise system connections.
+                    </p>
+                </div>
+
+                <div id="workflow-step-5" class="text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-white border-4 border-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-rocket text-orange-500 text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                            5
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Scale</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Performance optimization, monitoring, and continuous improvement cycles.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 p-8 lg:p-12">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-calendar-check text-blue-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">2-Week Sprints</h4>
+                        <p class="text-sm text-gray-600">Rapid iteration with regular demos and feedback loops.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-vial text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">Automated Testing</h4>
+                        <p class="text-sm text-gray-600">95%+ code coverage with unit, integration, and E2E tests.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-headset text-purple-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark mb-2">Dedicated Support</h4>
+                        <p class="text-sm text-gray-600">Post-launch maintenance and 24/7 technical assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ai-layer-section" class="py-24 bg-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-50 to-pink-50 rounded-full mb-6">
+                    <i class="fa-solid fa-brain text-purple-600 text-sm"></i>
+                    <span class="text-sm font-medium text-purple-600">AI-Powered Intelligence</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                    Intelligent AI Layer
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Embed cutting-edge artificial intelligence into your SaaS platform for smarter decision-making, automation, and user experiences.
+                </p>
+
+                <div class="space-y-6">
+                    <div id="ai-feature-1" class="flex items-start space-x-4 p-6 bg-gradient-to-br from-blue-50 to-blue-100/30 rounded-xl border border-blue-100">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-chart-pie text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-brand-dark mb-2">Analytics Dashboards</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Real-time data visualization with AI-driven insights, anomaly detection, and trend forecasting for informed business decisions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="ai-feature-2" class="flex items-start space-x-4 p-6 bg-gradient-to-br from-purple-50 to-purple-100/30 rounded-xl border border-purple-100">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-crystal-ball text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-brand-dark mb-2">Predictive Insights</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Machine learning models that predict user behavior, churn risk, and revenue opportunities before they happen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="ai-feature-3" class="flex items-start space-x-4 p-6 bg-gradient-to-br from-green-50 to-green-100/30 rounded-xl border border-green-100">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-wand-magic-sparkles text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-brand-dark mb-2">Automation Logic</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Intelligent workflow automation that learns from patterns, optimizes processes, and reduces manual intervention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl transform rotate-3"></div>
+                <div class="relative bg-white rounded-2xl shadow-2xl shadow-gray-200/50 p-8 border border-gray-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <h4 class="text-lg font-bold text-brand-dark">AI Performance Metrics</h4>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-xs text-gray-500">Live</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100/50 p-5 rounded-xl border border-blue-100">
+                            <div class="flex items-center justify-between mb-3">
+                                <i class="fa-solid fa-brain text-blue-600 text-lg"></i>
+                                <span class="text-xs font-semibold text-green-600">+24%</span>
+                            </div>
+                            <div class="text-2xl font-bold text-brand-dark mb-1">94.2%</div>
+                            <div class="text-xs text-gray-600">Model Accuracy</div>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100/50 p-5 rounded-xl border border-purple-100">
+                            <div class="flex items-center justify-between mb-3">
+                                <i class="fa-solid fa-gauge-high text-purple-600 text-lg"></i>
+                                <span class="text-xs font-semibold text-green-600">+18%</span>
+                            </div>
+                            <div class="text-2xl font-bold text-brand-dark mb-1">1.2M</div>
+                            <div class="text-xs text-gray-600">Predictions/Day</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-5 rounded-xl">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-semibold text-brand-dark">Automation Efficiency</span>
+                                <span class="text-sm font-bold text-brand-red">87%</span>
+                            </div>
+                            <div class="h-3 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-brand-red to-red-600 rounded-full" style="width: 87%"></div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="text-center p-3 bg-green-50 rounded-lg border border-green-100">
+                                <div class="text-xl font-bold text-green-600">156</div>
+                                <div class="text-xs text-gray-600">Tasks/Hour</div>
+                            </div>
+                            <div class="text-center p-3 bg-blue-50 rounded-lg border border-blue-100">
+                                <div class="text-xl font-bold text-blue-600">23ms</div>
+                                <div class="text-xs text-gray-600">Response</div>
+                            </div>
+                            <div class="text-center p-3 bg-purple-50 rounded-lg border border-purple-100">
+                                <div class="text-xl font-bold text-purple-600">99.8%</div>
+                                <div class="text-xs text-gray-600">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-gradient-to-r from-brand-red/10 to-purple-100/50 rounded-xl border border-brand-red/20">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-sparkles text-brand-red text-lg"></i>
+                            <div>
+                                <div class="text-sm font-semibold text-brand-dark">AI Learning Active</div>
+                                <div class="text-xs text-gray-600">Model improving from 24.5K user interactions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tech-stack-section" class="py-24 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full mb-6 shadow-sm">
+                <i class="fa-solid fa-layer-group text-brand-dark text-sm"></i>
+                <span class="text-sm font-medium text-brand-dark">Technology</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                Enterprise-Grade Tech Stack
+            </h2>
+            <p class="text-lg text-gray-600">
+                Modern, battle-tested technologies that power the world's leading SaaS platforms.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="tech-category-1" class="bg-white rounded-xl p-6 border border-gray-200 hover:border-brand-red hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-desktop text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-dark mb-4">Frontend</h3>
+                <ul class="space-y-2">
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        React.js / Next.js
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        TypeScript
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Tailwind CSS
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Redux / Zustand
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tech-category-2" class="bg-white rounded-xl p-6 border border-gray-200 hover:border-brand-red hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-server text-green-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-dark mb-4">Backend</h3>
+                <ul class="space-y-2">
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Node.js / Python
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        GraphQL / REST
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Microservices
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Docker / Kubernetes
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tech-category-3" class="bg-white rounded-xl p-6 border border-gray-200 hover:border-brand-red hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-database text-purple-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-dark mb-4">Database</h3>
+                <ul class="space-y-2">
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        PostgreSQL
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        MongoDB
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Redis Cache
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Elasticsearch
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tech-category-4" class="bg-white rounded-xl p-6 border border-gray-200 hover:border-brand-red hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center mb-4">
+                    <i class="fa-solid fa-cloud text-orange-600 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-dark mb-4">Cloud & DevOps</h3>
+                <ul class="space-y-2">
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        AWS / Azure / GCP
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        CI/CD Pipelines
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Terraform
+                    </li>
+                    <li class="text-sm text-gray-600 flex items-center">
+                        <i class="fa-solid fa-circle text-gray-300 text-xs mr-2"></i>
+                        Monitoring & Logs
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="benefits-section" class="py-24 bg-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-gray-100 rounded-full mb-6">
+                <i class="fa-solid fa-trophy text-brand-dark text-sm"></i>
+                <span class="text-sm font-medium text-brand-dark">Why Choose Us</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                Built for Scale, Security & Speed
+            </h2>
+            <p class="text-lg text-gray-600">
+                Enterprise features that differentiate your SaaS platform in competitive markets.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div id="benefit-card-1" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30">
+                    <i class="fa-solid fa-bolt text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Lightning Fast Performance</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Optimized code, CDN delivery, and edge caching ensure sub-second load times globally.
+                </p>
+            </div>
+
+            <div id="benefit-card-2" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-green-500/30">
+                    <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Bank-Level Security</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    SOC 2 compliance, end-to-end encryption, and regular security audits protect your data.
+                </p>
+            </div>
+
+            <div id="benefit-card-3" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30">
+                    <i class="fa-solid fa-arrows-up-down-left-right text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Infinite Scalability</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Auto-scaling infrastructure handles traffic spikes from 100 to 10M users seamlessly.
+                </p>
+            </div>
+
+            <div id="benefit-card-4" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-red-500/30">
+                    <i class="fa-solid fa-mobile-screen-button text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Mobile-First Design</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Responsive interfaces and native app experiences across all devices and platforms.
+                </p>
+            </div>
+
+            <div id="benefit-card-5" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/30">
+                    <i class="fa-solid fa-puzzle-piece text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Seamless Integrations</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Pre-built connectors for Stripe, Salesforce, Slack, and 100+ enterprise tools.
+                </p>
+            </div>
+
+            <div id="benefit-card-6" class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:border-brand-red transition-all">
+                <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-chart-line text-white text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-brand-dark mb-3">Real-Time Analytics</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Live dashboards with custom metrics, user behavior tracking, and business intelligence.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="case-study-section" class="py-24 bg-gradient-to-b from-gray-50 to-white fade-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white rounded-full mb-6 shadow-sm">
+                <i class="fa-solid fa-star text-brand-dark text-sm"></i>
+                <span class="text-sm font-medium text-brand-dark">Success Stories</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
+                Proven Results for SaaS Leaders
+            </h2>
+            <p class="text-lg text-gray-600">
+                Real platforms, real growth, real impact across industries.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div id="case-study-1" class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                    <i class="fa-solid fa-chart-line text-white text-6xl opacity-20"></i>
+                </div>
+                <div class="p-8">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 bg-blue-50 rounded-full mb-4">
+                        <span class="text-xs font-medium text-blue-600">FinTech</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Investment Analytics Platform</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Built a multi-tenant SaaS platform serving 50K+ investors with real-time portfolio tracking and AI-powered insights.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">300%</div>
+                            <div class="text-xs text-gray-500">User Growth</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">$5M</div>
+                            <div class="text-xs text-gray-500">ARR</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">99.9%</div>
+                            <div class="text-xs text-gray-500">Uptime</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="case-study-2" class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                    <i class="fa-solid fa-hospital text-white text-6xl opacity-20"></i>
+                </div>
+                <div class="p-8">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 bg-green-50 rounded-full mb-4">
+                        <span class="text-xs font-medium text-green-600">Healthcare</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Patient Management System</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        HIPAA-compliant platform connecting 200+ clinics with secure EHR, appointment scheduling, and telemedicine.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">200+</div>
+                            <div class="text-xs text-gray-500">Clinics</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">1M+</div>
+                            <div class="text-xs text-gray-500">Patients</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">40%</div>
+                            <div class="text-xs text-gray-500">Cost Savings</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="case-study-3" class="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden hover:shadow-xl transition-all">
+                <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                    <i class="fa-solid fa-graduation-cap text-white text-6xl opacity-20"></i>
+                </div>
+                <div class="p-8">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 bg-purple-50 rounded-full mb-4">
+                        <span class="text-xs font-medium text-purple-600">EdTech</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Learning Management Platform</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Scalable LMS supporting 500K students with video streaming, assessments, and adaptive learning paths.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">500K</div>
+                            <div class="text-xs text-gray-500">Students</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">95%</div>
+                            <div class="text-xs text-gray-500">Satisfaction</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-brand-red">24/7</div>
+                            <div class="text-xs text-gray-500">Availability</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cta-section" class="py-24 bg-gradient-to-br from-brand-dark via-gray-900 to-brand-dark relative overflow-hidden fade-section">
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-brand-red rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-600 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
+        <div class="text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-8">
+                <i class="fa-solid fa-rocket text-white text-sm"></i>
+                <span class="text-sm font-medium text-white">Ready to Build?</span>
+            </div>
+            
+            <h2 class="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Let's Build Your SaaS Platform
+            </h2>
+            
+            <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Transform your vision into a scalable, secure, and intelligent SaaS solution. Schedule a consultation with our experts today.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <button class="px-10 py-5 bg-brand-red text-white font-semibold rounded-xl hover:bg-red-700 transition-all shadow-2xl shadow-red-500/30 hover:shadow-red-500/50 hover:scale-105 text-lg">
+                    Build SaaS Platform
+                </button>
+                <button class="px-10 py-5 bg-white/10 backdrop-blur-sm text-white font-semibold border border-white/20 rounded-xl hover:bg-white/20 transition-all text-lg">
+                    Schedule Demo
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 pt-8 border-t border-white/10">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">12-16 Weeks</div>
+                    <div class="text-gray-400">Average Delivery Time</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">50+ Projects</div>
+                    <div class="text-gray-400">Successfully Launched</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-white mb-2">98% Success</div>
+                    <div class="text-gray-400">Client Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+ <footer id="footer" class="bg-gray-50 border-t border-gray-200 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-1 mb-6">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="../assets/img/max-logo.png"
+                                alt="max-intell">
+                        </div>
+                        <span class="text-l font-semibold text-dark">Max <span
+                                class="text-primary">Intelligence</span></span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        AI-powered SaaS platforms for intelligent digital transformation
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/max-intelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/maxintelligence" target="_blank" rel="noopener"
+                            class="w-10 h-10 border border-gray-300 rounded-lg flex items-center justify-center hover:border-primary hover:text-primary transition text-gray-600">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../solutions/ai_ma.html" class="text-sm text-gray-600 hover:text-primary transition">AI &amp; Machine
+                                Learning</a></li>
+                        <li><a href="../solutions/healthcare_technology.html" class="text-sm text-gray-600 hover:text-primary transition">Healthcare
+                                Technology Solutions</a></li>
+                        <li><a href="../solutions/campus_suite.html" class="text-sm text-gray-600 hover:text-primary transition">Campus &amp;
+                                Education Management System</a></li>
+                        <li><a href="../solutions/construction_manageme.html" class="text-sm text-gray-600 hover:text-primary transition">Builders &amp;
+                                Construction Management Systems</a></li>
+                        <li><a href="../solutions/hos.html" class="text-sm text-gray-600 hover:text-primary transition">Hostel Management
+                                System</a></li>
+                        <li><a href="../solutions/e_s_p.html" class="text-sm text-gray-600 hover:text-primary transition">Enterprise SaaS
+                                Platforms</a></li>
+                        <li><a href="../solutions/c_b_s.html" class="text-sm text-gray-600 hover:text-primary transition">Custom Business
+                                Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-1">
+                    <h3 class="text-sm font-semibold text-dark mb-4">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="ux_design_product_strateg.html" class="text-sm text-gray-600 hover:text-primary transition">UI/UX Design and
+                                Product Development</a></li>
+                        <li><a href="mobile_app_development.html" class="text-sm text-gray-600 hover:text-primary transition">Mobile App
+                                Development</a></li>
+                        <li><a href="web_saas_development.html" class="text-sm text-gray-600 hover:text-primary transition">Web and SaaS
+                                Development</a></li>
+                        <li><a href="cloud_engineering_devops.html" class="text-sm text-gray-600 hover:text-primary transition">Cloud Engineering
+                                and DevOps</a></li>
+                        <li><a href="system_integration_migration.html" class="text-sm text-gray-600 hover:text-primary transition">System Integration
+                                and Migration</a></li>
+                        <li><a href="support_managed_services.html" class="text-sm text-gray-600 hover:text-primary transition">Support and Managed
+                                Services</a></li>
+                        <li><a href="ai_intelligence.html" class="text-sm text-gray-600 hover:text-primary transition">AI &
+                                Intelligence</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-dark mb-4">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../about.html" class="text-sm text-gray-600 hover:text-primary transition">About</a></li>
+                        <li><a href="../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Careers</a></li>
+                        <!-- <li><a href="../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Blog</a></li> -->
+                        <li><a href="../contact-max.html" class="text-sm text-gray-600 hover:text-primary transition">Contact</a></li>
+                        <!-- <li><a href="../index.html#solutions-overview" class="text-sm text-gray-600 hover:text-primary transition">Privacy</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- E-E-A-T Signals - Authoritativeness & Trustworthiness -->
+            <div class="border-t border-gray-200 pt-8 mt-12">
+                <div class="grid lg:grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-brain text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">AI & Digital Transformation</h4>
+                        <p class="text-sm text-gray-600">Helping organizations adopt AI, automation, and modern digital technologies to improve efficiency and business outcomes.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2">Certified AI & PM Professionals</h4>
+                        <p class="text-sm text-gray-600">Certified professionals with expertise in Artificial Intelligence, Project Management, Digital Transformation, and Enterprise Software Solutions.</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fa-solid fa-cloud text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-dark mb-2"> Cloud & Enterprise Solutions</h4>
+                        <p class="text-sm text-gray-600">Developing scalable web, mobile, cloud, and enterprise applications tailored to organizational needs</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-8">
+                    <p class="text-sm text-gray-600 mb-4">
+                       
+                        Our content is developed by experienced AI professionals, project managers, software engineers, and technology consultants, combining practical industry knowledge with the latest advancements in AI and digital transformation.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-xs mb-4 lg:mb-0">
+                        © 2012-26 Max Intelligence. All rights reserved.
+                    </p>
+                    <!-- <div class="flex items-center space-x-6 text-xs">
+                    <a href="terms.html" class="text-gray-500 hover:text-primary transition">Terms</a>
+                    <a href="privacy.html" class="text-gray-500 hover:text-primary transition">Privacy</a>
+                    <a href="cookies.html" class="text-gray-500 hover:text-primary transition">Cookies</a>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.fade-section');
+            if (!sections.length) return;
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReducedMotion) {
+                sections.forEach(section => section.classList.add('is-visible'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.15
+            });
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+    
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/talk-expert-modal.php'; ?>
+    <script src="../assets/js/talk-expert-loader.js"></script>
+    <script src="../assets/js/img-fallback.js" defer></script>
+    <script src="../assets/js/cta-router.js" defer></script>
+</body>
+</html>
